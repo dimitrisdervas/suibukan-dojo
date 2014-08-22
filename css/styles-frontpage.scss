@@ -1,0 +1,118 @@
+---
+---
+@import "susy"; 
+@import "layouts/frontpage-layout";
+@import "layouts/header-front-layout";
+@import "menu/menu-front";
+@import "typography";
+
+body {
+
+}
+// Logo
+.logo {
+		text-align: center;
+    a {
+        font-size: 3em;
+        line-height: 2em;
+        font-family: arial;
+        font-weight: bold;
+        font-family:"Oswald";
+
+    }
+}
+// Slideshow
+// .flexslider {
+// 	margin: 0;
+// 	background: #fff;
+// 	border: none medium;
+// 	position: relative;
+// 	-webkit-border-radius: 0px;
+// 	-moz-border-radius: 0px;
+// 	-o-border-radius: 0px;
+// 	border-radius: 0px;
+// 	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	-moz-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	-o-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	zoom: 1;
+// }
+
+// 
+// Menu
+// 
+.menu-wrapper {
+    @include full;
+} 
+.slideshow-section {
+	background: #AA2F2F;
+    padding-bottom: 20px;
+}
+.martialarts-section {
+	background: #AA2F2F;
+    text-align: center;
+    h1 a {      
+        color: #fff;
+    }
+}
+.articles-section,
+.news-section {
+    h1.section-title	{
+    font-family: "Roboto Slab";
+    margin-bottom: 40px;
+    line-height: 3.5em;
+    font-size: 3em;
+     }
+}
+
+
+.articles-section {
+    background: #F2F2F2;   	
+        article-img {
+            margin-bottom: 2em;
+        }
+        h3 {
+          margin-bottom: 2em;
+            padding: 20px 0;
+            a {
+                line-height: 1.5em;
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+        }
+    .read-more {
+        background: #fff;
+        text-align: center;
+        a {
+            
+        }
+    }
+}
+.videos-section {
+    background: #DFDFDF;
+    h1.section-title	{
+    font-family: "Roboto Slab";
+    padding-top:2em;
+    font-size: 3em;
+     }
+    h2 {
+        font-size: 1.8em;
+        padding-bottom:2em;
+    }
+    h3 {
+        
+    }
+}
+
+/* Google map */
+.gm-style-iw {
+width: 150px; 
+min-height: 35px;
+}
+.site-footer {
+    background: #363636;
+    color: #fff;
+    a,h3 {
+        color: #fff;
+    }
+}

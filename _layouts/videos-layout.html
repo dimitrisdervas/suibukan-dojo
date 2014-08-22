@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head-post.html %}
+
+    <body>
+        
+    <div class="page">
+        <div class="container">
+            {% include header-post-include.html %}
+            
+             {% for video in site.data.videos %} 
+                   
+                           <div class="videos-left">
+                                 <iframe width="640" height="360"  src="//www.youtube.com/embed/{{ video.url }}?rel=0" frameborder="0" allowfullscreen></iframe>
+                              </div>
+                           <div class="videos-right"> 
+                                 <h3> {{ video.title }} </h3>
+                              </div>                         
+
+              {% endfor %}
+                       
+        </div>
+    </div>
+
+        {% include footer-post-include.html %}
+        {% include bottom-post.html %}
+
+    </body>
+</html>

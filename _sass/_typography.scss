@@ -1,0 +1,39 @@
+body {
+	font-family: 'Open Sans' , sans-serif;
+	font-weight: 400;
+	color: #333333;
+	font-size: 16px;
+	line-height: 26px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+}
+h1, h1 a, h1 span, h2, h2 a, h2 span, h3, h3 a, h3 span, h4, h4 a, h4 span, h5, h5 a, h5 span, h6, h6 a, h6 span {
+	font-weight: 700;
+	color: #3c3c3c;
+}
+h1 {
+    font-family: "Roboto Slab";
+	line-height: 1.5em;
+	font-size: 2.2em;
+    a {
+        font-family: "Roboto Slab";
+        line-height: 1.5em;
+       	font-size: 1em; 
+    }
+}
+.section-title {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.333em;
+}
+
+img {
+	width: 100%;
+}
+a{
+    color: #333333;
+}
+a,a:hover {
+	text-decoration: none;
+}

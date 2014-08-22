@@ -1,0 +1,47 @@
+ {% if site.[page.kata] != null %}
+                       <div class="kata sidebar-block">
+                        <h3>Kata</h3>
+                         <ul>
+                          {% for post in site.[page.kata] %}
+                                 <li>
+                                    <a href="{{ post.url }}">
+                                        <span class="list-item">{{ post.title }}</span>
+                                        <span class="icon-container"><svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg></span>       
+                                       </a>
+                                     </li>
+                           {% endfor %}
+                               </ul>                     
+                       </div>  
+                   {% endif %}
+                   
+                   {% if site.[page.masters] != null %}
+                       <div class="masters sidebar-block">
+                        <h3>Masters</h3>
+                           <ul>
+                          {% for post in site.[page.masters] %}
+                                     <li>
+                                    <a href="{{ post.url }}">
+                                        <span class="list-item">{{ post.title }}</span>
+                                        <span class="icon-container"><svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg></span>       
+                                       </a>
+                                     </li>                              
+                           {% endfor %}
+                               </ul>
+                         </div>  
+                   {% endif %}
+                   
+                   {% if site.[page.weapons] != null %}
+                       <div class="weapons sidebar-block">
+                        <h3>Όπλα</h3>
+                           <ul>
+                          {% for post in site.[page.weapons] %}
+                                                                  <li>
+                                    <a href="{{ post.url }}">
+                                        <span class="list-item">{{ post.title }}</span>
+                                        <span class="icon-container"><svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg></span>       
+                                       </a>
+                                     </li>
+                           {% endfor %}
+                               </ul>
+                         </div>  
+                   {% endif %}

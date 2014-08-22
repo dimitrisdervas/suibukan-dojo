@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head-front.html %}
+
+    <body>
+
+    {% include header-front-include.html %}
+
+     <section class="slideshow-section section-full">
+          <div class="slideshow">
+            <ul class="slides">
+            <li>
+             <img src="http://suibukan.gr/sites/suibukan.com/files/accordion_small/image4.jpg" alt="" height="300px">
+             </li>
+        <!--       {% for image in site.data.slideshow %}
+                <li>
+                  <img src="{{ image.path }}">
+                </li>
+              {% endfor %} -->
+              </ul>
+          </div>
+        </section>
+
+      <section class="martialarts-section section-full">
+         <div class="container-front">
+             <ul>
+                   {% for post in site.categories['martialarts'] %} 
+                         <li class="martialarts-list">
+                                 <h1 class="martiarts-title"> <a href="{{ post.url }}">{{ post.title }} {{ post.part }} </a></h1>
+                             </li>        
+                      {% endfor %}   
+                  </ul>
+             </div>
+      </section>
+    
+      <section class="articles-section section-full">          
+         <div class="container-front">
+             <h1 class="section-title">Άρθρα</h1>
+                 <ul>
+                   {% for post in site.categories['articles'] limit:5  %} 
+                         <li class="articles-list">
+                                 <div class="article">
+                                      <div class="article-img">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{post.image}}&width=360&height=320" alt="{{post.title}}">
+                                         </div>
+                                     <h3 class="articles-title"> <a href="{{ post.url }}">{{ post.title }}</a></h3>                     
+                                  </div>
+                             </li>           
+                      {% endfor %}   
+                         <li>
+                             <div class="read-more"> 
+                                <a href="/articles">Περισσότερα Άρθρα</a>
+                                 {% for post in site.categories['articles'] offset:5  %} 
+                                  <h4 class="articles-title"> <a href="{{ post.url }}">{{ post.title }}</a></h4>  
+                                 {% endfor %} 
+                             </div>
+                         </li>
+                  </ul>
+             </div>
+      </section>
+        
+     <section class="news-section section-full">          
+         <div class="container-front">
+              <h1 class="section-title">Νέα</h1>
+             <ul class="list list-news">
+               {% for post in site.categories['news'] limit:1 %} 
+                          <div class="inside">
+                                 <div class="news-left">
+                                     <img src="{{ post.image }}" alt="">
+                                  </div>
+                                  <div class="news-right"> 
+                                      <h1 class="news-title"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
+                                      {{ post.content }}
+                                  </div>              
+                             </div>
+                  {% endfor %}   
+              </ul>
+             </div>
+      </section>
+        
+      <section class="videos-section section-full">          
+         <div class="container-front">
+              <h1 class="section-title">Videos</h1>
+           {% for video in site.data.videos limit:1 %} 
+                 
+                     <h2> {{ video.title }} </h2>
+                     <div class="videos-left">
+                         <iframe width="640" height="360"  src="//www.youtube.com/embed/{{ video.url }}?rel=0" frameborder="0" allowfullscreen></iframe>
+                     </div>
+                  {% endfor %}
+                           <div class="videos-right"> 
+                               <h2> Περισσότερα video</h2>
+                                 {% for video in site.data.videos offset:1 %}                               
+                                  <h3> {{ video.title }} </h3>                                                       
+                                  {% endfor %}
+                              </div>                         
+                          
+              
+             </div>
+      </section>
+
+     
+        
+    <div id="map-canvas"></div>
+
+    {% include footer-front-include.html %}
+    
+    {% include bottom-front.html %}
+    </body>
+</html>

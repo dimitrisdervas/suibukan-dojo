@@ -1,0 +1,172 @@
+---
+---
+@import "susy"; 
+@import "layouts/frontpage-simon-layout";
+@import "layouts/header-simon-layout";
+@import "menu/menu-simon";
+@import "typography";
+
+$bg-body: #fff;
+$bg-header: #f7f7f7;
+$text-header: #9c9d9f;
+$text-content: #333333;
+$bg-content: #ffffff;
+$border: #E9E9E9;
+$link-hover: #00a9c5;
+$icon-hover: #d4d4d4;
+
+body {
+background-color: $bg-body;
+margin:0;
+}
+.container-front {
+    background-color: $bg-header;
+}
+.page {
+    margin-bottom: 12em;
+}
+.site-header-wrapper {
+    background: $bg-header;
+    padding: 8px 0;
+}
+.site-header {
+    padding: 1.3em 0;
+	a {
+        color:#323232;
+    }
+}
+// Logo
+.logo {
+    font-family:"Oswald";
+    .logo-title {
+        display: block;
+        font-size: 2em;
+        font-weight: bold;
+        }
+    .logo-subheader {
+        line-height: 2em;
+        font-weight: normal;
+    }
+}
+// Slideshow
+.slideshow-section {
+    .container-slideshow {
+        padding: 40px 0;
+        background: rgba(255, 255, 255, 0.3);     
+        h1 {
+            font-size: 5.5em;
+            color: #323232;
+            margin: auto;
+            left: 250px;        
+        }
+        p {
+            width:1100px;
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+    }
+}
+.line {
+    position: relative;
+    display: block;
+    margin: 24px 0;
+}
+.small {
+    width: 30px;
+    height: 3px;
+}
+.line.white  {
+   border-top: 2px solid white;
+}
+.line.red {
+    border-top: 2px solid #A02E2E;
+}
+
+.schedule-section {
+    ul li {
+        @include gallery (4 of 12);
+        text-align: center;
+    }
+    .schedule-days {
+        display: block;
+        font-size: 2em;
+		font-weight: bold;
+    }
+    .schedule-time {
+        font-size: 1.2em;
+        line-height: 5em;        
+    }
+}
+
+.martialarts-section {
+	.martialarts-list {
+        text-align: center;
+    }
+}
+
+.articles-section {
+    .blog-text-front h5 a {
+        color: #fff;
+        font-weight: bold;
+     } 
+        /*
+     * Caption component
+     */
+    .caption {
+        position: relative;
+        overflow: hidden;
+    }
+    .caption__media {
+        display: block;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .caption__overlay {
+        position: absolute;
+        top: 55%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding-left: 20px;
+    }
+    .read-more {
+        background: #fff;
+        text-align: center;
+        a {
+            
+        }
+    }
+}
+.videos-section {
+    .container-front {
+        background: url(triangle-background.svg);
+        display:block;
+    }
+    h1.section-title	{
+    padding-top:2em;
+    font-size: 3em;
+     }
+    h2 {
+        font-size: 1.8em;
+        padding-bottom:2em;
+    }
+    h3 {
+        
+    }
+}
+
+/* Google map */
+.gm-style-iw {
+width: 150px; 
+min-height: 35px;
+}
+.site-footer {
+    background: #363636;
+    color: #fff;
+    a,h3 {
+        color: #fff;
+    }
+}

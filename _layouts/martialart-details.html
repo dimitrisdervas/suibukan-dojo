@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head-post.html %}
+   
+    <body>
+
+        {% include header-post-include.html %}
+
+    <div class="page">
+        <div class="container">
+             <div class="content-details">
+                 <div class="martialart-details">
+                     <h1> {{ page.title }} </h1>
+                      <ul>
+                            {% for post in site.[page.categories] %}
+                                  <li class="sidebar-list">
+                                         <div class="post-img">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{post.image}}&width=300&height=261" alt="{{post.title}}">
+                                         </div>                          
+                                              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                                              <p>{{ post.period }}</p>
+                                       </li> 
+                               {% endfor %}
+                         </ul>
+                     </div>
+                          
+                 
+                   
+            
+                 
+                 </div>
+            </div>            	  
+    </div>
+
+    {% include footer-post-include.html %}
+        
+    {% include bottom-post.html %}
+
+    </body>
+</html>

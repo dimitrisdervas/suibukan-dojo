@@ -1,0 +1,64 @@
+@import "susy";
+
+$post-layout: layout(auto 12 .50 fluid);
+
+@mixin sticky-footer($footer-height, $wrapper-selector: ("#wrapper"), $container-selector: ("#container"), $footer-selector: ("#footer")) {
+  html, body {
+    height: 100%;
+  }
+  body {
+  	margin: 0px;
+  	padding: 0px;
+  }
+  #{$wrapper-selector} {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -$footer-height;
+    #{$container-selector} {
+      padding: 0 0 $footer-height 0;
+    } 
+  }
+  #{$footer-selector} {
+    height: $footer-height; 
+  }
+}
+
+/* Main Post Html */
+.page {
+	@include container;
+}
+.content {
+	@include span(8 inside of $post-layout);
+}
+.sidebar {
+	@include span(4 last inside of $post-layout);
+}
+
+.site-footer{
+    @include sticky-footer(30px, '.page', '.container', '.site-footer');
+    @include full;
+}
+.footer-bottom {
+    @include container;
+    .footer-columns {
+        
+    }
+    .footer-left {
+        @include span(4);
+    }
+    .footer-middle {
+        @include span(4);
+    }
+    .footer-right {
+        @include span(4);
+    }
+}
+
+/* Martial Art Details Page */
+.content-details {
+    @include container;
+}
+.martialart-details ul li {
+    @include gallery ( 3 of 12 );
+}

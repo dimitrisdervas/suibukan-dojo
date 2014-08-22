@@ -1,0 +1,15 @@
+@import "../susy";
+
+.site-header-wrapper {
+	@include full;
+}
+.site-header {
+	@include container;
+}
+.logo {
+	@include full;
+}
+.nav, .nav ul {
+	@include full;
+}
+

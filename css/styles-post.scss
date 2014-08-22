@@ -1,0 +1,157 @@
+---
+---
+@import "susy"; 
+@import "layouts/post-layout";
+@import "layouts/header-post-layout";
+@import "menu/menu-post";
+@import "typography";
+
+$bg-body: #f2f2f2;
+$bg-header: #363636;
+$text-header: #ffffff;
+$text-content: #333333;
+$bg-content: #ffffff;
+$border: #E9E9E9;
+$link-hover: #db3232;
+$icon-hover: #d4d4d4;
+
+body {
+background-color: $bg-body;
+margin:0;
+}
+.page {
+    margin-bottom: 12em;
+}
+.site-header-wrapper {
+    background: $bg-header;
+    margin-bottom: 4em;
+}
+.site-header {
+    padding: 1.3em 0;
+	a {
+        color:#fff;
+    }
+}
+// Logo
+.logo a {
+    font-size: 2em;
+	font-weight: bold;
+    font-family:"Oswald";
+
+}
+.content {
+    .content-inner {
+        float:left;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background: $bg-content;
+    }
+    h1, h1 a {
+        margin-bottom: 2em;
+    }
+    .post-more {
+        margin-bottom: 2em;
+    }
+    .post-img {
+        float:left;
+        background: $bg-content;
+    }
+    .continue-reading {
+        float:right;
+        background: $bg-body;
+        padding: 5px 20px;
+            &:hover {
+                background: $link-hover;
+            }
+            a {
+                 color: $text-content;
+                 font-size: 0.9em;
+            }
+        
+    }
+}
+
+.sidebar {
+		.sidebar-content {
+            float: left;
+			padding:50px 30px 30px;
+			background-color: #fff;
+            .sidebar-block {
+                margin-bottom: 2em;
+            }
+            h3 {
+                font-weight: 700;
+                font-family: 'Roboto Slab' , sans-serif;
+                margin-bottom: 0.8em;
+                }
+            }
+}
+.sidebar .sidebar-block {
+    float: left;
+    width: 100%;
+        ul li {
+            list-style: none;
+            a {
+                width:100%;
+                font-size: 0.9em;
+                display: block;
+                float: left;
+                padding: 5px 0;
+                border-bottom: 1px $bg-body solid;
+                .icon-container {
+                    fill: #fff;
+                    width: 24px;
+                    height: 24px;
+                    display: inline-block;
+                    line-height: 4em;
+                }
+                &:hover {
+                    color: $link-hover;
+                    background: $bg-body;
+                    .icon-container {
+                        fill: $icon-hover;
+                    }
+                }
+                .list-item {
+                    @include span(90% inside of 4);
+                }
+            }                 
+        }
+}
+		
+
+.site-footer {
+    background: $bg-header;
+    color: $bg-body;
+    a,h3 {
+        color: $bg-body;
+    }
+}
+
+/* Martial Art Details Page */
+
+.martialart-details {
+	h1 {
+        margin-bottom: 2em;
+    }
+	ul li {
+        background: #444444;
+        text-align: center;
+        text-transform: uppercase;
+        width: 260px;
+        margin-top: -4px;
+        margin-bottom: 4em;
+        color: #fff;
+        h3 {
+            min-height:54px;
+        }
+        h3 a {
+            color: #fff;
+            font-size: 18px;
+            padding: 20px 10px;
+            margin-bottom: 30px;
+        }
+    }
+}

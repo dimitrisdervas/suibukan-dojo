@@ -1,0 +1,15 @@
+<div class="sidebar-articles sidebar-block ">                 
+    <h3>Άρθρα</h3>
+        <ul>
+            {% for post in site.categories['articles'] %}
+            <li>
+                <a href="{{ post.url }}">
+                    <span class="list-item">{{ post.title }}</span>
+                <span class="icon-container">
+                      <svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg>
+                    </span>       </a>
+                    
+            </li>
+            {% endfor %}
+        </ul>
+    </div>

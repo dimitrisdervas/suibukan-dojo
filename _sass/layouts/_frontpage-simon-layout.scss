@@ -1,0 +1,67 @@
+@import "susy";
+
+.section-full {
+	@include full;
+}
+.container-front {
+    @include container;
+    padding: 3%;
+}
+.container-slideshow {
+    position: absolute;
+    width: 100%;
+    top: 380px;
+    .container-slideshow-inner {
+        @include container;
+    }
+}
+.martialarts-section,
+.articles-section,
+.videos-section,
+.news-section {
+    padding-bottom: 2em;
+}
+
+.martialarts-section  ul li {
+    @include gallery(4 of 12);
+        }
+.articles-section ul li {
+      @include gallery(3 inside of 12);
+}
+
+.news-section {
+        .news-left {
+        @include span(6 of 12)
+    }
+        .news-right {
+        @include span(5 of 12)
+    }
+
+}
+.videos-section{
+    .videos-left {
+            @include span(6 of 12)
+        }
+    .videos-right {
+            @include span(4 last of 12)
+        }
+}
+#map-canvas {
+    @include full;
+    height: 500px;
+}
+.footer-bottom {
+    @include container;
+    .footer-columns {
+        
+    }
+    .footer-left {
+        @include span(4);
+    }
+    .footer-middle {
+        @include span(4);
+    }
+    .footer-right {
+        @include span(4);
+    }
+}
