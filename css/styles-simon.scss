@@ -3,8 +3,10 @@
 @import "susy"; 
 @import "layouts/frontpage-simon-layout";
 @import "layouts/header-simon-layout";
+@import "layouts/place-simon-layout";
 @import "menu/menu-simon";
 @import "typography";
+@import "captionjs";
 
 $bg-body: #fff;
 $bg-header: #f7f7f7;
@@ -20,10 +22,10 @@ background-color: $bg-body;
 margin:0;
 }
 .container-front {
-    background-color: $bg-header;
+
 }
 .page {
-    margin-bottom: 12em;
+
 }
 .site-header-wrapper {
     background: $bg-header;
@@ -166,7 +168,19 @@ min-height: 35px;
 .site-footer {
     background: #363636;
     color: #fff;
+    .container-front {
+        background: #363636;
+    }
     a,h3 {
         color: #fff;
+    }
+}
+.place {
+    h1 {
+        font-size: 4em;
+        margin-bottom: 1em;        
+    }
+    p {
+        margin-bottom: 2em;
     }
 }

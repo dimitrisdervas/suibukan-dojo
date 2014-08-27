@@ -1,5 +1,6 @@
 ---
 title: Yamashita Suikendo
+category: martialarts
 icon: http://suibukan.gr/el/content/54/yamashita-suikendo
 image: https://c1.staticflickr.com/3/2914/14772548166_047c8fc1ab_b.jpg
 ---

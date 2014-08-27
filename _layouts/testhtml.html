@@ -12,28 +12,33 @@
 <body>
     <div data-role="page" id="index">
        
-        <div data-role="content">
-            <div class="flexslider">
-              <ul class="slides">
-                <li>
-                  <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" />
-                </li>
-                <li>
-                  <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg" />
-                </li>
-                <li>
-                  <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg" />
-                </li>
-                <li>
-                  <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" />
-                </li>
-              </ul>
-            </div>
-        </div>
 
-        <div data-theme="a" data-role="footer" data-position="fixed">
+                 <ul>
+                   {% for posts in site.categories['articles']  %} 
+                         <li class="articles-list">
+                                 <div class="article caption">
+                                      <div class="article-img caption__media">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{post.image}}&width=320&height=320" alt="{{post.title}}">
+                                         </div>
+                                     <div class="blog-text-front caption__overlay">
+                                     <span class="line small white "></span>
+                                     <h5 class="articles-title caption__overlay__title"> <a href="{{ post.url }}">{{ posts.title }}</a></h5>
+                                         </div>
+                                  </div>
+                             </li>           
+                      {% endfor %}   
+                         <li>
+                             <div class="read-more"> 
+                                  <div class="continue-reading">
+                                      <a href="/articles">Περισσότερα Άρθρα</a>
+                                 </div>    
+                             </div>
+                         </li>
+                  </ul>
 
-        </div>
+
+
+
     </div>   
 </body>
 </html>   

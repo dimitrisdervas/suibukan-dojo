@@ -13,7 +13,7 @@ function initialize()
 {
     var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 10,
+                    zoom: 8,
 
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(40.605351,22.994972), // Touba
@@ -277,6 +277,10 @@ function initialize()
     }
 
     map.fitBounds(bounds);
+    var listener = google.maps.event.addListener(map, "idle", function() { 
+      if (map.getZoom() > 16) map.setZoom(12); 
+      google.maps.event.removeListener(listener); 
+    });
 }
  google.maps.event.addDomListener(window, 'load', initialize);
 

@@ -1,5 +1,6 @@
 ---
-title: Σχετικά με το Δρόμο (Do)
+title: Σχετικά με το Δρόμο (Do
+category: articles
 image: http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/hqdefault.jpg
 ---
 

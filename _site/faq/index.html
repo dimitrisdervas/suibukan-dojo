@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title>SuiBuKan DOJO Techican</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="canonical" href="http://yourdomain.com/faq/">
+        <!-- CSS -->  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700/Roboto+Slab:400,700/Roboto+Condensed:400,700/Oswald:400,700">
+    <link rel="stylesheet" href="/css/styles-simon.css">
+<!--     http://themes.simonbouchard.com/theagency-v2/home/home-4/ -->
+        <!-- Modernizr -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>   
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/capital.gr.js" ></script> 
+    <script type="text/javascript" src="/js/caption.min.js" ></script>    
+    <script type="text/javascript" src="/js/svg-injector.min.js" ></script> 
+    
+<!--         http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly -->
+    <script type="text/javascript"  src="/js/doubletaptogo.min.js" ></script> 
+    <script>$( '#nav li:has(ul)' ).doubleTapToGo();</script>
+    
+    <!--     Footer date autoupdate -->
+    <script>
+        jQuery(document).ready(function() { 
+        var strStart = '2014'; 
+        var strYear = new Date(); 
+        if (strStart == strYear.getFullYear()) { jQuery("#copyright_year").html(strStart); } 
+        else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear()); 
+             
+         
+     </script>
+    
+    <script>
+            $(window).load(function() {
+            $('img.caption').captionjs({
+                'class_name'      : 'captionjs', // Class name assigned to each <figure>
+                'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
+                'mode'            : 'hide',   // default | static | animated | hide
+                'debug_mode'      : false,       // Output debug info to the JS console
+                'force_dimensions': false        // Force the dimensions in case they can't be detected (e.g., image is not yet painted to viewport)
+            });
+        });
+    </script>
+    
+          <script>
+            // Elements to inject
+            var mySVGsToInject = document.querySelectorAll('.iconic-sprite');
+
+            // Do the injection
+            SVGInjector(mySVGsToInject);
+          </script>
+    
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+<!-- Added this tip
+http://bdadam.com/blog/simple-usability-trick-for-google-maps.html -->
+
+<script>
+var LocationData = [
+    [40.606991, 22.997580, "Dojo Technican","Suibukan","697.644.1064"]
+];
+
+
+    
+function initialize()
+{
+    var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 8,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.605351,22.994972), // Touba
+                       
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    // http://www.mapstylr.com/
+        styles : [
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 65
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 51
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 30
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "weight": 0.29
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": -13
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#00b3ff"
+            },
+            {
+                "saturation": -21
+            },
+            {
+                "lightness": -25
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#8693a1"
+            },
+            {
+                "weight": 2.3
+            },
+            {
+                "lightness": -13
+            },
+            {
+                "gamma": 1.08
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "weight": 0.48
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": 2.6
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": -37
+            },
+            {
+                "gamma": 0.01
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#f5f0f5"
+            },
+            {
+                "weight": 4.43
+            }
+        ]
+    }
+]						
+                };
+    var mapElement = document.getElementById('map-canvas');
+    var map = new google.maps.Map(mapElement, mapOptions);
+    var bounds = new google.maps.LatLngBounds();
+    var infowindow = new google.maps.InfoWindow({ maxWidth: 200 });
+     
+    for (var i in LocationData)
+    {
+        var p = LocationData[i];
+        var latlng = new google.maps.LatLng(p[0], p[1]);
+        bounds.extend(latlng);
+         
+        
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: p[3],
+            mob: p[4],
+            by: p[2]
+        });
+        
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent( "<h3>" + this.title + "</h3>"  +  this.by + this.mob );
+            infowindow.open(map, this);
+        });
+    }
+
+    map.fitBounds(bounds);
+    var listener = google.maps.event.addListener(map, "idle", function() { 
+      if (map.getZoom() > 16) map.setZoom(12); 
+      google.maps.event.removeListener(listener); 
+    });
+}
+ google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+    </head>
+
+    <body>
+    <div class="page">
+        <div class="container">
+    <header class="site-header-wrapper">
+        <div class="site-header">
+                <div class="logo">
+                    <a href="/"><span class="logo-title" > SUIBUKAN </span><span class="logo-subheader">at Dojo Tenchikan</span></a>
+                    </div>
+                <div class="menu-wrapper" >
+                        <nav id="nav" role="navigation">
+                            <ul>	
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/">Αρχική</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/martialarts/karate-gr/">Karate</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/martialarts/kobudo-gr/">Kobudo</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/martialarts/suikendo-gr/">Suikendo</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/organization">Οργανισμός</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/articles/">Άρθρα</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/place/">Χώρος</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/news/">Νέα</a>
+                                    
+                                </li>
+                                
+                            </ul>                
+                        </nav>    
+                    </div>
+            </div>     
+</header>
+
+
+    <div class="faq-content"><div class="faq"><div class="faq-description"><p>Πιο κάτω θα βρείτε μια σειρά από ερωτήσεις που συχνά ρωτούν οι άνθρωποι που περνούν από τα dojo για να πάρουν πληροφορίες. Πολλές από αυτές μπορεί να μην σας έχουν απασχολήσει ποτέ. Δεν πειράζει, δεν χρειάζεται να διαβάσετε ούτε την απάντηση! Αν πάλι κάποιες σας έχουν απασχολήσει, κάντε ένα κόπο. Διαβάζοντας θα παρατηρήσετε ότι δεν θεωρούμε καμιά ερώτηση κουτή, αλλά διατηρούμε το δικαίωμα να χρησιμοποιούμε και λίγο χιούμορ, το οποίο θεωρούμε ότι είναι πολύ απαραίτητο στη ζωή! </p>
+<p>Γνωρίζουμε ότι ένα ερωτηματολόγιο ποτέ δεν μπορεί να καλύψει τους πάντες, γι αυτό, παρακαλούμε, ελάτε σε επαφή μαζί μας για περισσότερες πληροφορίες. Στις ερωτήσεις απάντησε ο shihan Π. Βελησσαρίου, 5 dan.</p>
+</div>
+<div>
+          <div class="faq-question-answer faq-viewed">
+    <div class="faq-question faq-dt-hide-answer faq-processed faq-qa-visible">
+    <a href="/el/faq" id="n202" class="active">Υπάρχει η άποψη ότι οι πολεμικές τέχνες προωθούν τη βία. Ποια είναι η δική σας γνώμη;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible">
+    <p>Είναι μια άποψη που "κυκλοφορεί" μεταξύ των α-νόητων ανθρώπων, δηλαδή μεταξύ αυτών που δεν σκέφτονται. Στο Suibukan μαθαίνεις πως "καλύτερα να αποφύγεις μία μάχη, παρά να κερδίσεις χίλιες". Άρα η σωματική εμπλοπή και επομένως η άσκηση βίας έρχεται τελευταία, και χρησιμοποιείται μόνο όταν πρόκειται για ζητήματα που η ζωή σου ή η ζωή των δικών σου ανθρώπων βρίσκεται σε κίνδυνο. Ένας καλύτερος ορισμός για τις πολεμικές τέχνες είναι ότι σε εκπαιδεύουν ώστε να διαχειρίζεσαι τη βία, ακόμα κι αν προέρχεται από τον αντίπαλό σου. Πηγή της βίας είναι ο φόβος. Οπότε θα λέγαμε ότι το να διαχειρίζεσαι τη βία σημαίνει να διαχειρίζεσαι τους φόβους σου, και το πως αυτοί επηρεάζουν τη λογική και τα συναισθήματα σου. Έχει αποδειχθεί στην πράξη ότι άνθρωποι που γνωρίζουν πολεμικές τέχνες, εμπλέκονται πολύ λιγότερο σε καυγάδες και ανούσιους τσακωμούς, έχοντας την αυτοεκτίμηση που χρειάζεται για να σταθούν στο ύψος των περιστάσεων.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n200" class="active">Σπάτε ξύλα και τούβλα;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Όχι το αποφεύγουμε. Τώρα γιατί το κάνουν κάποιοι άλλοι; Είναι καλό να τους ρωτήσετε. Η άποψή μου είναι ότι οι επιδείξεις αυτού του τύπου αποτελούν μια λαϊκή έκφραση, τύπου "Κουταλιανός" που "μασάει σίδερα και κάνει το λιοντάρι". Οι λαϊκοί ήρωες κάνανε πάντα επιδείξεις της σωματικής τους ρώμης, και χρησιμοποιούσαν υλικά που έβρισκαν τριγύρω στις πλατείες ή τους δρόμους. Οι θεατές από την άλλη, μέσα στην άγνοιά τους, πάντα εντυπωσιάζονταν από τα ανδραγαθήματα, που είναι πολύ λιγότερο ανιαρά από το να βλέπεις κάποιον να κάνει γροθιές στον αέρα.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n198" class="active">Είναι αλήθεια ότι θα σπάσω τη μύτη μου κάνοντας καράτε;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Κατά τη διάρκεια της προπόνησης όχι. Αλλά δεν αποκλείεται να το πάθεις, αν σκοντάψεις στις σκάλες του dojo και προσγειωθείς με το πρόσωπο. Τελικά ακόμα κι αυτό θα μπορούσε να είναι ένα μάθημα αν το δεις θετικά. Όλα αυτά που ακούγονται δεξιά κι αριστερά, είναι ή ανούσιες φήμες (ράδιο αρβύλα) ή φοβίες. Είναι γνωστό όμως ότι το 99% των φόβων μας δεν θα πραγματοποιηθεί ποτέ. Ας είμαστε λοιπόν τολμηροί.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n196" class="active">Μήπως είμαι αρκετά μεγάλος για να κάνω καράτε;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Ίσως θα έπρεπε να αναρωτηθείς, αν είσαι πολύ μικρός για να πάψεις να μαθαίνεις, δηλαδή να ζεις. Η αλήθεια είναι ότι, στις μέρες μας η πλειοψηφία των "αθλούμενων" στις πολεμικές τέχνες είναι μικρά παιδιά. Αυτό δεν είναι τυχαίο. Η σπορ μορφή των πολεμικών τεχνών απαιτεί φυτώριο για παραγωγή πρωταθλητών, και μαζί πολλών "αναλώσιμων". Μετά τα 25-30 θεωρείσαι παράγοντας, εφοσον έχεις επιβιώσει από τραυματισμούς και διασυλλογικές κόντρες, φοράς κοστούμι και κάνεις πολιτική, διαιωνίζοντας το "κακό". Στο suibukan, που δεν ασχολείται κανείς με αγώνες, κάνουμε προπόνηση μέχρι τα γεράματα, όπως άλλωστε ήταν από πάντα. Ο δάσκαλος Nagazato, σήμερα (2002) 83 χρονών εξακολουθεί να εξασκεί αυτό που έκανε όλη του τη ζωή. Ο master Yamashita, σήμερα 60 χρονών, ακόμη χοροπηδάει σαν παιδάκι στα σεμινάρια. Εγώ ξεκίνησα 23 χρονών, μια καλή ηλικία για ν' αρχίσει κανείς. Ξέρω άλλους που ξεκίνησαν στα 10 κι άλλους που ξεκίνησαν 18, 30 ή 45 ετών. (Για ηλικίες κάτω των 10-12 χρονών είναι ίσως νωρίς να ασχοληθεί ένα παιδί, γιατί οι πολεμικές τέχνες απαιτούν αρκετά καλά αναπτυγμένο νευρομυϊκό σύστημα.) Σημασία έχει το γιατί θέλεις να μάθεις μια πολεμική τέχνη και τι είσαι διατεθιμένος να κάνεις γι αυτό. Ξέρω ότι μπορεί να το κάνει ο καθένας, αρκεί να διαθέσει χρόνο και ενέργεια.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n194" class="active">Σε πόσο καιρό θα πάρω την μαύρη ζώνη;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Πίσω από αυτή την συνηθισμένη ερώτηση κρύβεται μια εσφαλμένη αντίληψη. Το τι σημαίνει μαύρη ζώνη για ένα αρχάριο, το ξέρω γιατί το 1989 ήμουν αρχάριος. Υπάρχει ένα δέος πίσω από τον όρο "μαύρη ζώνη", που υποδεικνύει τη μισή αλήθεια. Η μισή αλήθεια λοιπόν για τη μαύρη ζώνη είναι ότι ο κάτοχος της έχει ικανότητες στη μάχη. Η άλλη μισή όμως είναι ότι μόλις άρχισε! Δηλαδή; Ε να, ας πούμε ότι με τη μαύρη ζώνη αποκτάς το δικαίωμα να αρχίσεις τις ουσιαστικές σπουδές σου στις πολεμικές τέχνες. Φεύγεις από τη δοκιμαστική περίοδο και σοβαρά πλέον εμβαθύνεις στον δρόμο των πολεμικών τεχνών. Το ταξίδι θα σου πάρει "μια ζωή". Αλλά ευχαριστιέσαι το ταξίδι, και δεν σε αγχώνει ο προορισμός. Και σε αυτό το ταξίδι θα έχεις πολλούς φίλους, που θα κάνουν την ίδια διαδρομή με σένα, επομένως θα περνάμε καλά. Εάν λοιπόν σε ενδιαφέρει να μάθεις πότε ξεκινά το ταξίδι: σε 3,5-4 χρόνια. Αλλά πας βήμα-βήμα, κι ούτε που το καταλαβαίνεις. Αν πάλι θέλεις να πας αργά αργά κι αυτό μπορείς να το κάνεις.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n192" class="active">Σε πόσο καιρό θα μπορώ να αντιμετωπίζω επικίνδυνες καταστάσεις στο δρόμο;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Ο όρος δρόμος μπορεί να σημαίνει πολλά. Δηλαδή δρόμος είναι ο ταξιτζής που ξεστόμισε κάτι μέσα στην κούρασή του και κάνει και τον "καμπόσο", αλλά κι ο τρομοκράτης που οπλοφορεί. Από την άλλη δεν έχει σημασία μόνο η μαχητική ικανότητα που έχεις, αλλά και σε τι κατάσταση είσαι και κάτω από τι συνθήκες εξελλίσεται μια σύγκρουση. Όπως και να έχει το πράγμα μια μάχη είναι πάντα 50-50. Ο San Tsu, στο βιβλίο του "Η τέχνη του πολέμου", έγραψε ότι "ποτέ να μην υποτιμάς τον αντίπαλό σου". Η ετοιμότητα, αλλά και η ικανότητα να μην εμπλέκεσαι σε μάχη, αναπτύσσονται με την καθημερινή εξάσκηση. Σίγουρα ένα μεγάλο ποσοστό συγκρούσεων, πάνω από 90%, μπορεί να τελειώσει σύντομα, αλλά πάντα προετοιμάζεσαι για το υπόλοιπο 10%, που είναι οι δύσκολες καταστάσεις. Αυτό θα απαιτήσει τουλάχιστον 2-3 χρόνια προπόνησης.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n190" class="active">Μου αρέσουν πολύ οι τεχνικές καράτε σε ταινίες. Σε πόσο καιρό θα είμαι σε θέση να επιδεικνύω κι εγώ αντίστοιχες τεχνικές;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Κι εμάς μας αρέσουν (όχι όλες, οι καλές γιατί κυκλοφορεί και πολύ σαβούρα). Θα σου πω ο master Yamashita, που έχει παίξει σε πολλές ταινίες δράσης, λέει ότι "αυτό είναι πολύ εύκολο, αν έχεις πολύ καλή τεχνική". Άρα προηγείται η δική σου προσπάθεια και ένα μεγάλο όνειρο, κι ο κόσμος του θεάματος σε περιμένει. Σίγουρα εκεί θα ανακαλύψεις και τεχνικές που δεν πρόκειται ποτέ να σου μάθουμε, όπως να περπατάς στον αέρα, να πιάνεις σφαίρες, και να νικάς πάντα τον κακό.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n188" class="active">Πίσω από το καράτε κρύβεται κάποια φιλοσοφία;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>O όρος φιλοσοφία, ετυμολογικά είναι σωστός. Όντως είμαστε φίλοι της Σοφίας, όχι όμως αυτής των ανθρώπων, που μοιάζει μωρία για τον Θεό. Η αλήθεια είναι ότι εκείνοι που ασχολούνταν με τις πολεμικές τέχνες θέλησαν να τις ντύσουν φιλοσοφικά, για να τις συνδέσουν έτσι με την καθημερινότητά τους. Έτσι μπόρεσαν να δώσουν νόημα σε κάτι ανόητο και βαρετό (να χτυπάς μόνος σου τον αέρα), για να έχουν λόγο να το συνεχίσουν για πολλά χρόνια. Και τις έντυσαν με την δική τους ανατολική κουλτούρα. Πολλοί από τους μιμητές τους όμως, που είναι οι δυτικοί, είτε τις απογύμνωσαν από κάθε φιλοσοφικό ένδυμα και τις έκαναν σπορ, είτε μέσα στην άγνοιά τους και την πνευματική τους έρημο, υιοθέτησαν την ανατολική κουλτούρα ως αναπόσπαστο μέρος της τέχνης και, ως συνέπεια, άρχισαν να λαλούν ασυναρτησίες, πράγματα που δεν καταλάβαιναν και να παπαγαλίζουν Ταοϊσμό ή Σιντοϊσμό. Το αποτέλεσμα ήταν να δημιουργηθεί σύγχυση στους μαθητές, στους θεατές και στα μέσα μαζικής ενημέρωσης (που διαιώνισαν την ημιμάθεια και την σύγχυσή τους). Το ζήτημα όμως δεν είναι τι κουβαλούν μαζί τους οι πολεμικές τέχνες, αλλά γιατί εμείς ζούμε σε πνευματική έρημο  και τι έχουμε να αντιπαραβάλουμε στην ανατολική κουλτούρα. Μήπως την κουλτούρα του σκυλαδικού ή τον διογκωμένο ουμανισμό ή την αρρωστημένη θρησκευτικότητα;</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n186" class="active">Ποια η σχέση των πολεμικών τεχνών με τις ανατολικές θρησκείες;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Ακούγονται διάφορες θεωρίες που λένε ότι "πίσω από τις κινήσεις" κρύβονται θρησκευτικού τύπου τελετουργίες. Περαστικά τους σε όσους τις διαδίδουν. Στην προηγούμενη ερώτηση εξήγησα πως δημιουργήθηκε η σύγχυση. Δεν μένει παρά ένας άσχετος να μας πει ότι το τσάμικο (ελληνικός παραδοσιακός χορός), που ως γνωστόν έχει ρίζες στην Αρχαία Ελλάδα, προέρχεται από τις διονυσιακές τελετές και ο πρώτος του χορού είναι ο ιερέας του Διόνυσου, που τραβάει με ένα μαντήλι τους υπόλοιπους στον Άδη. Και μάλιστα οι κυκλικές κινήσεις γύρω από τον εαυτό του, αποτελούν επίκληση της Θεάς Αρτέμιδος, ενώ το χτύπημα του τσαρουχιού είναι για να αγγίξει σκόνη από τη Μητέρα Γη, κι έτσι να μετασχηματιστεί σε τράγο, ώστε να ολοκληρώθεί στο συμπαντικό περιβάλλον. ΤΙΠΟΤΑ ΑΠΟ ΤΑ ΠΡΟΗΓΟΥΜΕΝΑ ΔΕΝ ΕΙΝΑΙ ΑΛΗΘΕΙΑ. Αλλά βλέπετε πως δημιουργείται ο μύθος μέσω μιας όχι υγειούς φαντασίας. Κι επειδή αρέσκομαι στο να βάζω τα πράγματα στη θέση τους, θα αναρωτηθώ. Τι είναι αυτό που φοβίζει πιο πολύ τους Χριστιανούς; Οι ανατολικές θρησκείες ή η έλλειψη Χριστού στην μη εν Χριστώ ζωή τους; Μήπως η άγνοια του Ευαγγελίου του Κυρίου έχει ζουμερούς καρπούς; Τον φόβο, την ενοχή, την απιστία, την καχυποψία, το σκοταδισμό, την έλλειψη εμπιστοσύνης στις υποσχέσεις του Θεού.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n184" class="active">Μια γνωστή μου μού είπε ότι το καράτε είναι αίρεση. Είναι αλήθεια αυτό;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Να μια ενδιαφέρουσα ερώτηση! Υπάρχει πάντα μια θεία, μια τρίτη ξαδέλφη του γείτονα ή ένας ιεροκήρυκας που ξέρουν τα πάντα. Που πάντα είναι εκεί για να μας σώσουν από τις κακοτοπιές της ζωής, τα πονηρά μονοπάτια. Εντελώς τυχαία, ποτέ δεν θα έπαιρνες συμβουλή από αυτούς για τη διαχείριση των οικονομικών σου, ποτέ δεν θα σε συμβούλευαν για να ξεπεράσεις ομαλά μια πρόκληση με την γυναίκα σου και ποτέ δεν θα άφηνες σ'αυτούς τα παιδιά σου για διακοπές. Παράξενο, ε; Παρόλα αυτά έχουν μια άποψη και είναι καλό να ακούμε και να μαθαίνουμε! Καταρχήν αυτοί δεν ξέρουν καν τον ορισμό της αίρεσης! Εσύ τον ξέρεις; Γιατί αν δεν τον ξέρεις πρέπει να τον μάθεις. Όχι από τον οποιοδήποτε, αλλά από τον Απ. Παύλο. Γνώρισε λοιπόν και ενδυνάμωσε έτσι την πίστη σου, στηριζόμενος στην Γνώση και τη Σοφία κι όχι σε φήμες, δοξασίες και οίηση.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n182" class="active">Κρύβονται υπερφυσικές δυνάμεις πίσω από τα χτυπήματα καράτε;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Στην Ανατολή αρέσκονται στην δημιουργία θρύλων με δράκους και πολεμιστές που κινούνται από τις στέγες των σπιτιών μέχρι και τις κορφές των δέντρων (δες "Τίγρης και Δράκος"). Κατι αντίστοιχο βέβαια έκαναν κι οι αρχαίοι Έλληνες στην μυθολογία τους. Στην σύγχρονη Δύση τον ρόλο του παραμυθά ανέλαβαν τα κινηματογραφικά στούντιο του Χόλυγουντ, χωρίς να υστερεί κι η βιομηχανία ταινιών του Χονγκ Κονγκ. Η εικονοποίηση των μύθων είναι πολύ πιο ισχυρό εργαλείο, περνά κι αποτυπώνεται πολύ ευκολότερα στο ασυνείδητο, κι αυτή η τεχνική λειτούργησε πολύ τις τελευταίες δεκατίες. Φυσικά στις ταινίες όλα γίνονται, και κανείς δεν παραξενεύεται πια γι αυτό, ειδικά μετά το Μatrix. Πέρα από τον μύθο όμως το υπερ-φυσικό, εκεί δηλαδή που ανατρέπονται οι φυσικοί νόμοι, πάντα υπάρχει. Όλοι ξέρουμε ότι δεν γίνεται να κόψεις τη θάλασσα στα δύο, αλλά ο Θεός το έκανε για τους Ισδραηλίτες. Όλοι ξέρουμε ότι δεν μπορείς να περπατήσεις πάνω στη θάλασσα, αλλά Πέτρος το έκανε (με ένα Χέρι βοηθείας βέβαια). Όλοι ξέρουμε ότι οι νεκροί δεν σηκώνονται, αλλά ο Χριστός αναστήθηκε. Άρα οι "φυσικοί νόμοι" δεν είναι και τόσο δεσμευτικοί για τον Δημιουργό τους. Από την άλλη υπάρχει κι ο Copperfield, o Μάγος. Όπως και σε όλους τους αιώνες υπήρξαν άνθρωποι που παραβίαζαν τα του Θεού (χωρίς άδεια). Αυτό κάνει σήμερα η φαρμακοβιομηχανία και η βιογεννητική (στο όνομα της Επιστήμης). Επομένως μην ψάχνεις το "λάκο στην φάβα" σε λάθος πιάτο. Στις πολεμικές τέχνες τα πράγματα είναι ξεκάθαρα. Θέλει προσπάθεια, υπομονή, επιμονή, προσωπικό όραμα και η ανταμοιβή το δώρο σου από τον Θεό είναι η ικανότητα να προστατεύεις εσένα, την οικογένειά σου, την κοινότητά σου, όχι μόνο με τα χέρια σου αλλά κυρίως με το μαχητικό πνεύμα που αναπτύσεις.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n180" class="active">Υπάρχουν μυστικές τεχνικές στις οποίες ασκούνται μόνο οι κάτοχοι μαύρης ζώνης;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Υπάρχουν τεχνικές στις οποίες ασκούνται μόνο οι κάτοχοι μαύρης ζώνης, αλλά δεν είναι μυστικές! Είναι περισσότερο πολύπλοκες και επομένως χωρίς νόημα για τον αρχάριο ή το μεσαίο μαθητή, ο οποίος δουλεύει πιο βασικές τεχνικές. Χρειάζεται λίγο υπομονή και όρεξη, κι όλα ανήκουν σε αυτούς που θέλουν, στον κόσμο των πολεμικών τεχνών. Τώρα αν κάποιοι προσπαθούν να πλάσουν μύθους πίσω από τον όρο "μαύρη ζώνη", μπορείτε να κοιτάξετε την υπόλοιπη ζωή τους, οικογένεια-οικονομική κατάσταση-ικανότητα επικοινωνίας, και θα καταλάβετε τι, κατά βάθος, προσπαθούν να καλύψουν.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n178" class="active">Χρειάζεται να ακολουθήσω παράλληλα και κάποια ειδική διατροφή κατά την εξάσκησή μου στις πολεμικές τέχνες;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Η αποτοξίνωση του οργανισμού σου, είναι επείγον γεγονός, αλλά αυτό δεν έχει να κάνει με τις πολεμικές τέχνες. Κατά πάσα πιθανότητα χρειάζεται να ακολουθήσεις κάποια ειδική διατροφή, όχι γιατί το απαιτεί η εξάσκηση στις πολεμικές τέχνες, αλλά γιατί το σώμα σου έχει τόσο πολύ καταπονηθεί και τοξινωθεί από την κακή διατροφή, που χρειάζεται άμεσα σέρβις. Πρέπει να γίνει έτσι κι αλλιώς. Αυτό όμως είναι δική σου απόφαση! Δεν μπορεί κανείς να στο επιβάλλει γιατί, όπως και στις πολεμικές τέχνες έχει την απόλυτη ελευθερία να το κάνεις ή να μην το κάνεις. Και πρέπει να είναι δική σου απόφαση γιατί δεν είναι ο εύκολος δρόμος. Εμείς τυχαίνει να το έχουμε ψάξει και μπορούμε να σε βοηθήσουμε να το ψάξεις κι εσύ. Παράλληλα θα ανακαλύψεις τι εκπληκτική "μηχανή" είναι το σώμα, που αντέχει δεκαετίες σκληρής χρήσης. Οι πολεμικές τέχνες βοηθούν στην προσπάθεια αποτοξίνωσης από όλα τα λήμματα τοξινών που έχουν κατακαθίσει στο σώμα και δημιουργούν αθρητικά, πονοκεφάλους, κακή διάθεση, κακοσμία, άγχος. Ήρθε ίσως ο καιρός να φροντίσεις αυτό το εκπληκτικό δώρο του Θεού, που δεν πάυει να είναι ναός Του.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n177" class="active">Κάνετε σύστημα που χρησιμοποιεί κλωτσιές ή γροθιές κατά πλειοψηφία;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Κανουμε και κεφαλιές, αγκωνιές, γονατιές. Ο Bruce Lee έλεγε ότι όταν κρατάς ένα όπλο, είναι μειονέκτημα, γιατί είσαι "υποχρεωμένος" να το χρησιμοποιήσεις. Εφόσον τα χέρια και τα πόδια είναι τα όπλα του budoka δεν πρέπει να εστιάσει σε ένα από αυτά, αλλά να αναπτύξει μια συνολική ικανότητα, για να έχει επιλογές όταν χρειαστεί. Τι θα συμβεί σε ένα budoka, εάν πιαστεί στα χέρια με τον αντίπαλο ή πέσει στο έδαφος και χρειαστεί να παλέψει; Δεν μπορεί να ισχυριστεί βέβαια ότι αυτό είναι εκτός ύλης! Η ολοκλήρωση ενός μαχητή είναι βέβαια μια πολύχρονη διαδικασία, επομένως χρειάζεται να ξεκινήσετε αμέσως!</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n176" class="active">Κάνετε αμυντικό ή επιθετικό καράτε;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Ο διαχωρισμός των πολεμικών τεχνών σε αμυντικές (για αυτοάμυνα) ή επιθετικές (για τσαμπουκά) είναι ένας ακόμη μύθος, που δημιουργήθηκε στις μέρες μας από την βασική αιτία παρερμηνειών και μυθοπλασίας, την άγνοια. Η χρήση των πολεμικών τεχνών, όπως και των όπλων, έχει να κάνει με τον χρήστη τους, δηλαδή τον άνθρωπο. Δεν τίθεται θέμα "καλές" ή "κακές" πολεμικές τέχνες. Έτσι κι αλλιώς ο όρος "τέχνη" απενοχοποιεί τον προσδιορισμό "πολεμική". Και θα ήταν και παράλογο να προπονείσαι όλη σου τη ζωή, απλά και μόνο, για να μην σε δείρουν μία φορά, που κι αυτό απίθανο είναι. Η τέχνη του πολέμου, είναι τόσο παλιά όσο κι ο άνθρωπος. Ο Sun Tsu έλεγε ότι "στην ειρήνη ετοιμάζεσαι για πόλεμο, αλλά όταν γίνει πόλεμος φρόντισε να κάνεις σύντομα ειρήνη". Πρέπει να έχεις την ικανότητα να καταστήλεις τον κλέφτη, τον τρομοκράτη, τον βιαστή, οποιονδήποτε απειλεί εσένα ή την οικογένειά σου ή την κοινότητα μέσα στην οποία ζεις. Πρέπει να μπορείς να είσαι αποτελεσματικός, και προνοητικός και όχι μοιρολάτρης και ψευτοειρηνιστής, απλά για να αποποιηθείς την ευθύνη και να καλύψεις τους φόβους σου. Γιατί "καλά" να συμβεί στην οικογένεια του γείτονα, αν όμως συμβεί στην δική σου οικογένεια; Τότε οι θεωρίες καταρρέουν.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+          <div class="faq-question-answer">
+    <div class="faq-question faq-dt-hide-answer faq-processed">
+    <a href="/el/faq" id="n175" class="active">Ποια η διαφορά καράτε και τάε-κβον-ντο;</a>    </div> <!-- Close div: faq-question faq-dt-hide-answer -->
+
+    <div class="faq-answer faq-dd-hide-answer collapsible collapsed">
+    <p>Είναι δυο διαφορετικές πολεμικές τέχνες από δύο διαφορετικές χώρες. Η άποψη ότι το ένα χρησιμοποιεί περισσότερο τα χέρια και το άλλο περισσότερο τα πόδια είναι μάλλον απλοϊκή και ξεπερασμένη. Παρόλα αυτά διαφορές υπάρχουν ακόμη και μεταξύ συστημάτων καράτε ή συστημάτων ταεκβοντό σε σημείο που κανείς να μην μπορεί να απαντήσει απλά και σύντομα.</p>
+        </div> <!-- Close div: faq-answer faq-dd-hide-answer -->
+    </div> <!-- Close div: faq-question-answer -->
+  </div> <!-- Close div -->
+</div></div>
+    
+
+        <footer class="site-footer section-full">          
+         <div class="container-front">
+             <div class="footer-columns">
+                     <div class="footer-left">
+                     </div>
+                     <div class="footer-middle">
+                         <h3>Επικοινωνία</h3>
+
+                         <ul>
+                              
+                             <li class="dojo-list">
+                                 Dojo Toumbas : 693.700.8119
+                                 </li>
+                               
+                             <li class="dojo-list">
+                                 Dojo Patras : 697.773.6914
+                                 </li>
+                               
+                             <li class="dojo-list">
+                                 Dojo Athens : 697.324.7755
+                                 </li>
+                               
+                             <li class="dojo-list">
+                                 Dojo : 697.644.1064
+                                 </li>
+                               
+                             <li class="dojo-list">
+                                 Wu Shu : 
+                                 </li>
+                               
+                         </ul>
+
+                     </div>
+                     <div class="footer-right">
+                     </div>
+                  </div>
+
+              <div class="footer-bottom"> 
+                  &copy; 2010-<span id="copyright_year">2014</span>, 
+                  SuiBuKan Organization Greece. All rights reserved. Webdesign and development by <a href="techangel.gr">Techangel</a>.
+                  </div>
+              </div>    
+    </footer>
+        
+        </div>
+        </div>
+    </body>
+</html>

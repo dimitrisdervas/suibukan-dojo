@@ -1,5 +1,6 @@
 ---
 title: Anko Itosu - Οι δέκα αρχές του Karate
+category: articles
 image: http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/anko-itosu-with-students.jpg
 ---
 

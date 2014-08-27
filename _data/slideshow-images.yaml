@@ -1,7 +1,12 @@
-  - path: http://www.tenchikan.gr/images/1.jpg
-
   - path: http://www.tenchikan.gr/images/2.jpg
+    caption: Ο χώρος προπόνησης κατά την είσοδο
+
+  - path: http://www.tenchikan.gr/images/1.jpg
+    caption: Ο χώρος προπόνησης από μέσα
   
   - path: http://www.tenchikan.gr/images/3.jpg
+    caption: είσοδος στο DOJO
+    
   
   - path: http://www.tenchikan.gr/images/4.jpg
+    caption: Ο χώρος αναμονής

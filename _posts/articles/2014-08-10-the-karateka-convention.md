@@ -1,5 +1,6 @@
 ---
 title: Η Σύσκεψη των Οκιναβέζων Karateka του 1936
+category: articles
 image: http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/1937_meeting.png
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Καλοκαιρινό Σεμινάριο, Σεπ 2014
+category: news
 image: http://suibukan.gr/sites/suibukan.com/files/imagecache/node_top_640px/news_photos/yamashita_seminar_2014v2.jpg
 ---
 

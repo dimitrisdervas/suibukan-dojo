@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title>Kobayashi Shorin Ryu Kata</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="canonical" href="http://yourdomain.com/karate/kata/">
+        <!-- CSS -->  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700/Roboto+Slab:400,700/Roboto+Condensed:400,700/Oswald:400,700">
+    <link rel="stylesheet" href="/css/styles-simon.css">
+<!--     http://themes.simonbouchard.com/theagency-v2/home/home-4/ -->
+        <!-- Modernizr -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>   
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/capital.gr.js" ></script> 
+    <script type="text/javascript" src="/js/caption.min.js" ></script>    
+    <script type="text/javascript" src="/js/svg-injector.min.js" ></script> 
+    
+<!--         http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly -->
+    <script type="text/javascript"  src="/js/doubletaptogo.min.js" ></script> 
+    <script>$( '#nav li:has(ul)' ).doubleTapToGo();</script>
+    
+    <!--     Footer date autoupdate -->
+    <script>
+        jQuery(document).ready(function() { 
+        var strStart = '2014'; 
+        var strYear = new Date(); 
+        if (strStart == strYear.getFullYear()) { jQuery("#copyright_year").html(strStart); } 
+        else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear()); 
+             
+         
+     </script>
+    
+    <script>
+            $(window).load(function() {
+            $('img.caption').captionjs({
+                'class_name'      : 'captionjs', // Class name assigned to each <figure>
+                'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
+                'mode'            : 'hide',   // default | static | animated | hide
+                'debug_mode'      : false,       // Output debug info to the JS console
+                'force_dimensions': false        // Force the dimensions in case they can't be detected (e.g., image is not yet painted to viewport)
+            });
+        });
+    </script>
+    
+          <script>
+            // Elements to inject
+            var mySVGsToInject = document.querySelectorAll('.iconic-sprite');
+
+            // Do the injection
+            SVGInjector(mySVGsToInject);
+          </script>
+    
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+<!-- Added this tip
+http://bdadam.com/blog/simple-usability-trick-for-google-maps.html -->
+
+<script>
+var LocationData = [
+    [40.606991, 22.997580, "Dojo Technican","Suibukan","697.644.1064"]
+];
+
+
+    
+function initialize()
+{
+    var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 8,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.605351,22.994972), // Touba
+                       
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    // http://www.mapstylr.com/
+        styles : [
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 65
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 51
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 30
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "weight": 0.29
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": -13
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#00b3ff"
+            },
+            {
+                "saturation": -21
+            },
+            {
+                "lightness": -25
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#8693a1"
+            },
+            {
+                "weight": 2.3
+            },
+            {
+                "lightness": -13
+            },
+            {
+                "gamma": 1.08
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "weight": 0.48
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": 2.6
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": -37
+            },
+            {
+                "gamma": 0.01
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#f5f0f5"
+            },
+            {
+                "weight": 4.43
+            }
+        ]
+    }
+]						
+                };
+    var mapElement = document.getElementById('map-canvas');
+    var map = new google.maps.Map(mapElement, mapOptions);
+    var bounds = new google.maps.LatLngBounds();
+    var infowindow = new google.maps.InfoWindow({ maxWidth: 200 });
+     
+    for (var i in LocationData)
+    {
+        var p = LocationData[i];
+        var latlng = new google.maps.LatLng(p[0], p[1]);
+        bounds.extend(latlng);
+         
+        
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: p[3],
+            mob: p[4],
+            by: p[2]
+        });
+        
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent( "<h3>" + this.title + "</h3>"  +  this.by + this.mob );
+            infowindow.open(map, this);
+        });
+    }
+
+    map.fitBounds(bounds);
+    var listener = google.maps.event.addListener(map, "idle", function() { 
+      if (map.getZoom() > 16) map.setZoom(12); 
+      google.maps.event.removeListener(listener); 
+    });
+}
+ google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+    </head>
+   
+    <body>
+
+        <header class="site-header-wrapper">
+        <div class="site-header">
+                <div class="logo">
+                    <a href="/"><span class="logo-title" > SUIBUKAN </span><span class="logo-subheader">at Dojo Tenchikan</span></a>
+                    </div>
+                <div class="menu-wrapper" >
+                        <nav id="nav" role="navigation">
+                            <ul>	
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/">Αρχική</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/martialarts/karate-gr/">Karate</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/martialarts/kobudo-gr/">Kobudo</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/martialarts/suikendo-gr/">Suikendo</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/organization">Οργανισμός</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/articles/">Άρθρα</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/place/">Χώρος</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/news/">Νέα</a>
+                                    
+                                </li>
+                                
+                            </ul>                
+                        </nav>    
+                    </div>
+            </div>     
+</header>
+
+
+    <div class="page">
+        <div class="container">
+             <div class="content-details">
+                 <div class="martialart-details">
+                     <h1> Kobayashi Shorin Ryu Kata </h1>
+                      <ul>
+                            
+                                  <li class="sidebar-list">
+                                         <div class="post-img">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/budoka_photos/sui_matsumura.jpg?1280632962&width=300&height=261" alt="Basai Sho & Dai">
+                                         </div>                          
+                                              <h3><a href="/karatekata/2014-08-01-basai-gr.html">Basai Sho & Dai</a></h3>
+                                              <p></p>
+                                       </li> 
+                               
+                                  <li class="sidebar-list">
+                                         <div class="post-img">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/budoka_photos/sui_matsumura.jpg?1280632962&width=300&height=261" alt="Naichanchi Kata 1 - 3">
+                                         </div>                          
+                                              <h3><a href="/karatekata/2014-08-01-naichanchi-gr.html">Naichanchi Kata 1 - 3</a></h3>
+                                              <p></p>
+                                       </li> 
+                               
+                                  <li class="sidebar-list">
+                                         <div class="post-img">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/budoka_photos/sui_matsumura.jpg?1280632962&width=300&height=261" alt="Pinian Kata 1 - 5">
+                                         </div>                          
+                                              <h3><a href="/karatekata/2014-08-01-pinian-gr.html">Pinian Kata 1 - 5</a></h3>
+                                              <p></p>
+                                       </li> 
+                               
+                         </ul>
+                     </div>
+                          
+                 
+                   
+            
+                 
+                 </div>
+            </div>            	  
+    </div>
+
+    <footer class="site-footer section-full">          
+         <div class="container-front">
+             <div class="footer-columns">
+                     <div class="footer-left">
+                     </div>
+                     <div class="footer-middle">
+                         <h3>Επικοινωνία</h3>
+
+                         <ul>
+                              
+                             <li class="dojo-list">
+                                 Dojo Toumbas : 693.700.8119
+                                 </li>
+                               
+                             <li class="dojo-list">
+                                 Dojo Patras : 697.773.6914
+                                 </li>
+                               
+                             <li class="dojo-list">
+                                 Dojo Athens : 697.324.7755
+                                 </li>
+                               
+                             <li class="dojo-list">
+                                 Dojo : 697.644.1064
+                                 </li>
+                               
+                             <li class="dojo-list">
+                                 Wu Shu : 
+                                 </li>
+                               
+                         </ul>
+
+                     </div>
+                     <div class="footer-right">
+                     </div>
+                  </div>
+
+              <div class="footer-bottom"> 
+                  &copy; 2010-<span id="copyright_year">2014</span>, 
+                  SuiBuKan Organization Greece. All rights reserved. Webdesign and development by <a href="techangel.gr">Techangel</a>.
+                  </div>
+              </div>    
+    </footer>
+        
+    
+
+    </body>
+</html>

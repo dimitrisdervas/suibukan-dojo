@@ -54,14 +54,14 @@
                   </ul>
              </div>
       </section> -->
-        
-        
+     
+            
       <section class="articles-section section-full">          
          <div class="container-front">
              <h5 class="section-title">Άρθρα</h5>
               <span class="line small red"></span> 
                  <ul>
-                   {% for post in site.categories['articles'] limit:4  %} 
+                   {% for post in site.categories['articles'] %} 
                          <li class="articles-list">
                                  <div class="article caption">
                                       <div class="article-img caption__media">
@@ -78,6 +78,9 @@
                              <div class="read-more"> 
                                   <div class="continue-reading">
                                       <a href="/articles">Περισσότερα Άρθρα</a>
+                                       <span class="icon-container">
+                                          <svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg>
+                                        </span>   
                                  </div>    
                              </div>
                          </li>
@@ -112,7 +115,7 @@
         
     <div id="map-canvas"></div>
 
-    {% include footer-front-include.html %}
+    {% include footer-include.html %}
     
     </body>
 </html>

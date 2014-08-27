@@ -1,5 +1,6 @@
 ---
 title: Συνέντευξη με τον kyoshi Πολυχρονόπουλο
+category: articles
 image: http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/p1010024.jpg
 ---
 

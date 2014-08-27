@@ -15,12 +15,7 @@
         @include container;
     }
 }
-.martialarts-section,
-.articles-section,
-.videos-section,
-.news-section {
-    padding-bottom: 2em;
-}
+
 
 .martialarts-section  ul li {
     @include gallery(4 of 12);

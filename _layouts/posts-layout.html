@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head-simon.html %}
+
+    <body>
+
+        {% include header-simon-include.html %}
+
+    <div class="page">
+        <div class="container">
+             <div class="content">
+                 
+                      <div class="post">
+                         <div class="post-img">
+                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{page.image}}&width=772&height=261" alt="{{page.title}}">
+                         </div>
+                         <div class="content-inner">                   
+                             <h1>{{page.title}}</h1>
+                             {{content}}
+                         </div>			   	
+                    </div>
+            
+            
+            
+<!--                   <div class="pagination">
+                          <div class="paginate-previous">
+                                  {% if page.previous %} 
+                                      <a rel="prev" href="{{ page.previous.url }}">Previous post</a>
+                              <p>{{ page.next.title }}</p>
+                                  {% endif %}
+                              </div>
+                          <div class="paginate-next">
+                                  {% if page.next %} 
+                                        <a rel="next" href="{{ page.next.url }}">Next Post</a>
+                              <p>{{ page.next.title }}</p>
+                                  {% endif %}
+                             </div>
+                        </div> -->
+                 </div>
+
+            
+		   <div class="sidebar">
+               <div class="sidebar-content">
+                   <div>
+                        <img src="http://iris-metro.codio.io:4000/css/open-iconic/sprite/open-iconic.svg" class="iconic-sprite" style="display:none;" />
+                    </div>
+                   {% include  sidebar-martialarts.html %}
+                   {% include  sidebar-news.html %} 
+                   {% include  sidebar-articles.html %} 
+               </div>
+	  		</div>
+            
+        </div>
+    </div>
+
+    {% include footer-include.html %}
+        
+    {% include bottom-post.html %}
+
+    </body>
+</html>

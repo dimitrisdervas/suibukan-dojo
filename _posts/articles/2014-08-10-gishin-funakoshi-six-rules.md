@@ -1,5 +1,6 @@
 ---
 title: Gichin Funakoshi - Έξι Κανόνες
+category: articles
 image: http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/gichin-funakoshi.jpg
 ---
 

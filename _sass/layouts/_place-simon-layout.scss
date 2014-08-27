@@ -1,0 +1,15 @@
+@import "susy";
+
+.top {
+    @include full;
+}
+
+.bottom {
+    @include full;
+}
+.left {
+    @include span( 6 of 12 );
+}
+.right {
+    @include span( 6 last of 12 );
+}

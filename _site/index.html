@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-    <title>SuiBuKan</title>
+    <title>SuiBuKan DOJO Techican</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
     <link rel="canonical" href="http://yourdomain.com/">
@@ -19,22 +19,45 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>   
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://iris-metro.codio.io:4000/js/capital-gr.js" ></script> 
-       
+    <script type="text/javascript" src="/js/capital.gr.js" ></script> 
+    <script type="text/javascript" src="/js/caption.min.js" ></script>    
+    <script type="text/javascript" src="/js/svg-injector.min.js" ></script> 
     
 <!--         http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly -->
-    <script src="http://iris-metro.codio.io:4000/js/doubletaptogo.min.js" ></script> 
+    <script type="text/javascript"  src="/js/doubletaptogo.min.js" ></script> 
     <script>$( '#nav li:has(ul)' ).doubleTapToGo();</script>
     
     <!--     Footer date autoupdate -->
     <script>
-    jQuery(document).ready(function() { 
-    var strStart = '2014'; 
-    var strYear = new Date(); 
-    if (strStart == strYear.getFullYear()) { jQuery("#copyright_year").html(strStart); } 
-    else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear()); } }); 
+        jQuery(document).ready(function() { 
+        var strStart = '2014'; 
+        var strYear = new Date(); 
+        if (strStart == strYear.getFullYear()) { jQuery("#copyright_year").html(strStart); } 
+        else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear()); 
+             
+         
      </script>
+    
+    <script>
+            $(window).load(function() {
+            $('img.caption').captionjs({
+                'class_name'      : 'captionjs', // Class name assigned to each <figure>
+                'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
+                'mode'            : 'hide',   // default | static | animated | hide
+                'debug_mode'      : false,       // Output debug info to the JS console
+                'force_dimensions': false        // Force the dimensions in case they can't be detected (e.g., image is not yet painted to viewport)
+            });
+        });
+    </script>
+    
+          <script>
+            // Elements to inject
+            var mySVGsToInject = document.querySelectorAll('.iconic-sprite');
 
+            // Do the injection
+            SVGInjector(mySVGsToInject);
+          </script>
+    
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
 <!-- Added this tip
 http://bdadam.com/blog/simple-usability-trick-for-google-maps.html -->
@@ -50,7 +73,7 @@ function initialize()
 {
     var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 10,
+                    zoom: 8,
 
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(40.605351,22.994972), // Touba
@@ -314,6 +337,10 @@ function initialize()
     }
 
     map.fitBounds(bounds);
+    var listener = google.maps.event.addListener(map, "idle", function() { 
+      if (map.getZoom() > 16) map.setZoom(12); 
+      google.maps.event.removeListener(listener); 
+    });
 }
  google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -337,33 +364,15 @@ function initialize()
                                     
                                 </li>
                                                      
-                                
+                                 <!— display the top level navigation for items that don’t have a submenu -->
                                 <li>
-                                    <a href="#/" aria-haspopup="true">Karate</a>
-                                    <ul>
-                                        
-                                        <li><a href="/martialarts/karate-gr/">Τι σημαίνει</a></li>
-                                        
-                                        <li><a href="/karate/masters">Masters</a></li>
-                                        
-                                        <li><a href="/karate/kata">Kata</a></li>
-                                        
-                                    </ul>
+                                    <a href="/martialarts/karate-gr/">Karate</a>
                                     
                                 </li>
                                                      
-                                
+                                 <!— display the top level navigation for items that don’t have a submenu -->
                                 <li>
-                                    <a href="#/" aria-haspopup="true">Kobudo</a>
-                                    <ul>
-                                        
-                                        <li><a href="/martialarts/kobudo-gr/">Τι σημαίνει</a></li>
-                                        
-                                        <li><a href="/kobudo/masters">Masters</a></li>
-                                        
-                                        <li><a href="/kobudo/weapons">Όπλα</a></li>
-                                        
-                                    </ul>
+                                    <a href="/martialarts/kobudo-gr/">Kobudo</a>
                                     
                                 </li>
                                                      
@@ -387,6 +396,12 @@ function initialize()
                                                      
                                  <!— display the top level navigation for items that don’t have a submenu -->
                                 <li>
+                                    <a href="/place/">Χώρος</a>
+                                    
+                                </li>
+                                                     
+                                 <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
                                     <a href="/news/">Νέα</a>
                                     
                                 </li>
@@ -403,7 +418,7 @@ function initialize()
             <ul class="slides">
               
                 <li>
-                  <img src="http://www.tenchikan.gr/images/1.jpg">
+                  <img src="http://www.tenchikan.gr/images/2.jpg">
                     <div class="container-slideshow">
                         <div class="container-slideshow-inner">
                             <h1>Shorin Ryu Karate Do</h1>
@@ -453,8 +468,8 @@ function initialize()
                   </ul>
              </div>
       </section> -->
-        
-        
+     
+            
       <section class="articles-section section-full">          
          <div class="container-front">
              <h5 class="section-title">Άρθρα</h5>
@@ -508,11 +523,74 @@ function initialize()
                                          </div>
                                   </div>
                              </li>           
+                       
+                         <li class="articles-list">
+                                 <div class="article caption">
+                                      <div class="article-img caption__media">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/anko-itosu-with-students.jpg&width=320&height=320" alt="Anko Itosu - Οι δέκα αρχές του Karate">
+                                         </div>
+                                     <div class="blog-text-front caption__overlay">
+                                     <span class="line small white "></span>
+                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/anko-itosu-ten-principles">Anko Itosu - Οι δέκα αρχές του Karate</a></h5>
+                                         </div>
+                                  </div>
+                             </li>           
+                       
+                         <li class="articles-list">
+                                 <div class="article caption">
+                                      <div class="article-img caption__media">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/hqdefault.jpg&width=320&height=320" alt="Σύγχρονο karate της Ιαπωνίας">
+                                         </div>
+                                     <div class="blog-text-front caption__overlay">
+                                     <span class="line small white "></span>
+                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/modern-karate-gr">Σύγχρονο karate της Ιαπωνίας</a></h5>
+                                         </div>
+                                  </div>
+                             </li>           
+                       
+                         <li class="articles-list">
+                                 <div class="article caption">
+                                      <div class="article-img caption__media">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/20110522_yamashita_seminar_spring_2011_117_s.jpg&width=320&height=320" alt="Αντίο, Sensei">
+                                         </div>
+                                     <div class="blog-text-front caption__overlay">
+                                     <span class="line small white "></span>
+                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/farewell-sense-gr">Αντίο, Sensei</a></h5>
+                                         </div>
+                                  </div>
+                             </li>           
+                       
+                         <li class="articles-list">
+                                 <div class="article caption">
+                                      <div class="article-img caption__media">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/image8.jpg&width=320&height=320" alt="Τι σημαίνουν οι λέξεις “Bu” και “Budo”">
+                                         </div>
+                                     <div class="blog-text-front caption__overlay">
+                                     <span class="line small white "></span>
+                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/bu-do-gr">Τι σημαίνουν οι λέξεις “Bu” και “Budo”</a></h5>
+                                         </div>
+                                  </div>
+                             </li>           
+                       
+                         <li class="articles-list">
+                                 <div class="article caption">
+                                      <div class="article-img caption__media">
+                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/hqdefault.jpg&width=320&height=320" alt="Σχετικά με το Δρόμο (Do">
+                                         </div>
+                                     <div class="blog-text-front caption__overlay">
+                                     <span class="line small white "></span>
+                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/about-do-gr">Σχετικά με το Δρόμο (Do</a></h5>
+                                         </div>
+                                  </div>
+                             </li>           
                          
                          <li>
                              <div class="read-more"> 
                                   <div class="continue-reading">
                                       <a href="/articles">Περισσότερα Άρθρα</a>
+                                       <span class="icon-container">
+                                          <svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg>
+                                        </span>   
                                  </div>    
                              </div>
                          </li>
@@ -593,7 +671,7 @@ function initialize()
               <div class="footer-bottom"> 
                   &copy; 2010-<span id="copyright_year">2014</span>, 
                   SuiBuKan Organization Greece. All rights reserved. Webdesign and development by <a href="techangel.gr">Techangel</a>.
-                  Studio images &copy; by <a href="http://konstas-photography.blogspot.com/"> Ioannis E. Konstas </a></div>
+                  </div>
               </div>    
     </footer>
     
