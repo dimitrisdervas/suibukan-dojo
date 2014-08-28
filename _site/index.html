@@ -33,38 +33,33 @@
         var strStart = '2014'; 
         var strYear = new Date(); 
         if (strStart == strYear.getFullYear()) { jQuery("#copyright_year").html(strStart); } 
-        else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear()); 
-             
-         
-     </script>
-    
-    <script>
-            $(window).load(function() {
-            $('img.caption').captionjs({
-                'class_name'      : 'captionjs', // Class name assigned to each <figure>
-                'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
-                'mode'            : 'hide',   // default | static | animated | hide
-                'debug_mode'      : false,       // Output debug info to the JS console
-                'force_dimensions': false        // Force the dimensions in case they can't be detected (e.g., image is not yet painted to viewport)
+        else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear());</script>
+        <script>
+                $(window).load(function() {
+                $('img.caption').captionjs({
+                    'class_name'      : 'captionjs', // Class name assigned to each <figure>
+                    'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
+                    'mode'            : 'hide',   // default | static | animated | hide
+                    'debug_mode'      : false,       // Output debug info to the JS console
+                    'force_dimensions': false        // Force the dimensions in case they can't be detected (e.g., image is not yet painted to viewport)
+                });
             });
-        });
-    </script>
-    
-          <script>
+        </script>
+    <script>
             // Elements to inject
             var mySVGsToInject = document.querySelectorAll('.iconic-sprite');
 
             // Do the injection
             SVGInjector(mySVGsToInject);
-          </script>
-    
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+         </script>
+       
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
 <!-- Added this tip
 http://bdadam.com/blog/simple-usability-trick-for-google-maps.html -->
 
 <script>
 var LocationData = [
-    [40.606991, 22.997580, "Dojo Technican","Suibukan","697.644.1064"]
+    [40.606991, 22.997580, "Dojo Technican","Suibukan","697.644.1064","http://www.tenchikan.gr/images/2.jpg"]
 ];
 
 
@@ -73,7 +68,7 @@ function initialize()
 {
     var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 8,
+                    zoom: 12,
 
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(40.605351,22.994972), // Touba
@@ -326,17 +321,17 @@ function initialize()
             map: map,
             title: p[3],
             mob: p[4],
-            by: p[2]
+            by: p[2],
+            img: p[5]
         });
         
         
         google.maps.event.addListener(marker, 'click', function() {
-            infowindow.setContent( "<h3>" + this.title + "</h3>"  +  this.by + this.mob );
+            infowindow.setContent( "<h2>" + this.title + "</h2>"  + "<img src=\" " + this.img + "\"</img>" + "<h3>" + this.by + "</h3>" + "<h3>" + this.mob + "</h3>");
             infowindow.open(map, this);
         });
     }
-
-    map.fitBounds(bounds);
+    
     var listener = google.maps.event.addListener(map, "idle", function() { 
       if (map.getZoom() > 16) map.setZoom(12); 
       google.maps.event.removeListener(listener); 
@@ -345,6 +340,7 @@ function initialize()
  google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
+    
     </head>
 
     <body>
@@ -421,9 +417,11 @@ function initialize()
                   <img src="http://www.tenchikan.gr/images/2.jpg">
                     <div class="container-slideshow">
                         <div class="container-slideshow-inner">
-                            <h1>Shorin Ryu Karate Do</h1>
+                           <h1><a href="/martialarts/karate-gr">Shorin Ryu Karate Do</a></h1>
+                            <h3>Nεό τμήμα στη Τούμπα στο <a href="#map-canvas">Dojo Technican.</a></h3>
                             <span class="line white small"></span>
-                            <p>Το Shorin Ryu Karate είναι ένα παραδοσιακό στυλ καράτε, μη αγωνιστικό, πιστό στην παράδοση της Οκινάβας. Ξεκινάει μια καινούρια χρονιά και νεό τμήμα στη Τούμπα στο Dojo Technican.</p>
+                            <p>Το <a href="/martialarts/karate-gr/">Shorin Ryu Karate</a> είναι ένα παραδοσιακό στυλ καράτε, μη αγωνιστικό, πιστό στην παράδοση της Οκινάβας.</p>
+                            <div class="continue-reading-front"><a href="/martialarts/karate-gr/">Περισσότερα</a></div>
                         </div>
                     </div>
                 </li>
@@ -523,78 +521,13 @@ function initialize()
                                          </div>
                                   </div>
                              </li>           
-                       
-                         <li class="articles-list">
-                                 <div class="article caption">
-                                      <div class="article-img caption__media">
-                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/anko-itosu-with-students.jpg&width=320&height=320" alt="Anko Itosu - Οι δέκα αρχές του Karate">
-                                         </div>
-                                     <div class="blog-text-front caption__overlay">
-                                     <span class="line small white "></span>
-                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/anko-itosu-ten-principles">Anko Itosu - Οι δέκα αρχές του Karate</a></h5>
-                                         </div>
-                                  </div>
-                             </li>           
-                       
-                         <li class="articles-list">
-                                 <div class="article caption">
-                                      <div class="article-img caption__media">
-                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/hqdefault.jpg&width=320&height=320" alt="Σύγχρονο karate της Ιαπωνίας">
-                                         </div>
-                                     <div class="blog-text-front caption__overlay">
-                                     <span class="line small white "></span>
-                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/modern-karate-gr">Σύγχρονο karate της Ιαπωνίας</a></h5>
-                                         </div>
-                                  </div>
-                             </li>           
-                       
-                         <li class="articles-list">
-                                 <div class="article caption">
-                                      <div class="article-img caption__media">
-                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/20110522_yamashita_seminar_spring_2011_117_s.jpg&width=320&height=320" alt="Αντίο, Sensei">
-                                         </div>
-                                     <div class="blog-text-front caption__overlay">
-                                     <span class="line small white "></span>
-                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/farewell-sense-gr">Αντίο, Sensei</a></h5>
-                                         </div>
-                                  </div>
-                             </li>           
-                       
-                         <li class="articles-list">
-                                 <div class="article caption">
-                                      <div class="article-img caption__media">
-                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/image8.jpg&width=320&height=320" alt="Τι σημαίνουν οι λέξεις “Bu” και “Budo”">
-                                         </div>
-                                     <div class="blog-text-front caption__overlay">
-                                     <span class="line small white "></span>
-                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/bu-do-gr">Τι σημαίνουν οι λέξεις “Bu” και “Budo”</a></h5>
-                                         </div>
-                                  </div>
-                             </li>           
-                       
-                         <li class="articles-list">
-                                 <div class="article caption">
-                                      <div class="article-img caption__media">
-                                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url=http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/hqdefault.jpg&width=320&height=320" alt="Σχετικά με το Δρόμο (Do">
-                                         </div>
-                                     <div class="blog-text-front caption__overlay">
-                                     <span class="line small white "></span>
-                                     <h5 class="articles-title caption__overlay__title"> <a href="/articles/about-do-gr">Σχετικά με το Δρόμο (Do</a></h5>
-                                         </div>
-                                  </div>
-                             </li>           
-                         
-                         <li>
+                                                     
+                  </ul>
                              <div class="read-more"> 
-                                  <div class="continue-reading">
-                                      <a href="/articles">Περισσότερα Άρθρα</a>
-                                       <span class="icon-container">
-                                          <svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg>
-                                        </span>   
+                                  <div class="continue-reading-front">
+                                      <a href="/articles">Περισσότερα Άρθρα</a> 
                                  </div>    
                              </div>
-                         </li>
-                  </ul>
              </div>
       </section>
         
@@ -602,10 +535,10 @@ function initialize()
         
       <section class="videos-section section-full">          
          <div class="container-front">
-              <h1 class="section-title">Videos</h1>
-            
-                 
-                     <h2> Λίγα λόγια για το Suibukan... </h2>
+           <h5 class="section-title">Videos</h5>
+              <span class="line small red"></span> 
+                             
+                     <h2> Τι είναι το Suibukan και τι διδάσκει; </h2>
                      <div class="videos-left">
                          <iframe width="640" height="360"  src="//www.youtube.com/embed/BKhzFl3_NxA?rel=0" frameborder="0" allowfullscreen></iframe>
                      </div>
@@ -613,13 +546,13 @@ function initialize()
                            <div class="videos-right"> 
                                <h2> Περισσότερα video</h2>
                                                                 
-                                  <h3> Η σημασία των όρων dojo και sensei </h3>                                                       
+                                  <h3><a href="/videos/#eRD8q9i4iy4">Τι σημαίνουν οι όροι dojo και sensei; </a><span>(1:43)</span></h3>                                                      
                                                                  
-                                  <h3> Η επικαιρότητα των πολεμικών τεχνών </h3>                                                       
+                                  <h3><a href="/videos/#GS5MZQ6L6ro">Πόσο επίκαιρες είναι πολεμικές τέχνες σήμερα; </a><span>(1:54)</span></h3>                                                      
                                                                  
-                                  <h3> Παράδοση ή Εκμοντερνισμός </h3>                                                       
+                                  <h3><a href="/videos/#/j-rdiNo7Ihs">Μοντέρνα ή Παραδοσιακή Πολεμική Τέχνη; </a><span>(1:43)</span></h3>                                                      
                                                                  
-                                  <h3> Αυτοάμυνα (Self defense) </h3>                                                       
+                                  <h3><a href="/videos/#rfUAO1ZTTvc">Ποια η διαφορά αυτοάμυνας και πολεμικής τέχνης; </a><span>(2:50)</span></h3>                                                      
                                   
                               </div>                         
                           
@@ -632,47 +565,29 @@ function initialize()
     <div id="map-canvas"></div>
 
     <footer class="site-footer section-full">          
-         <div class="container-front">
-             <div class="footer-columns">
-                     <div class="footer-left">
-                     </div>
-                     <div class="footer-middle">
-                         <h3>Επικοινωνία</h3>
-
-                         <ul>
-                              
-                             <li class="dojo-list">
-                                 Dojo Toumbas : 693.700.8119
-                                 </li>
-                               
-                             <li class="dojo-list">
-                                 Dojo Patras : 697.773.6914
-                                 </li>
-                               
-                             <li class="dojo-list">
-                                 Dojo Athens : 697.324.7755
-                                 </li>
-                               
-                             <li class="dojo-list">
-                                 Dojo : 697.644.1064
-                                 </li>
-                               
-                             <li class="dojo-list">
-                                 Wu Shu : 
-                                 </li>
-                               
-                         </ul>
-
-                     </div>
-                     <div class="footer-right">
-                     </div>
-                  </div>
-
-              <div class="footer-bottom"> 
+         <div class="container-front footer-top">
+                     <div class="left">
+                             <h3>Suibukan at "DOJO"</h3>
+                         <span class="line white small"></span>
+                             <p>m.6976441064</p>
+                             <p>email:dervas@suibukan.com</p>
+                             <p><a href="https://www.facebook.com/suibukan">Facebook</a></p>                      
+                         </div>
+                     <div class="right">
+                             <h3>Dojo Techican</h3>
+                         <span class="line white small"></span>
+                            <p>email:info@dojo-thessaloniki.gr</p>
+                            <p>17ης Νοέμβρη 81, Κωνσταντινοπολίτικα – Πυλαία</p>
+                            <p>(προέκταση Γρ. Λαμπράκη πριν το Γένεσις)</p>
+                            <p><a href="www.facebook.com/Dojo.Thessaloniki">Facebook</a></p>
+                         </div>
+             </div>   
+    <div class="footer-bottom section-full">
+                <div class="container-front"> 
                   &copy; 2010-<span id="copyright_year">2014</span>, 
-                  SuiBuKan Organization Greece. All rights reserved. Webdesign and development by <a href="techangel.gr">Techangel</a>.
-                  </div>
-              </div>    
+                  SuiBuKan Organization Greece. All rights reserved. Webdesign and development by <a href="techangel.gr">Techangel</a>
+            </div>
+    </div>
     </footer>
     
     </body>

@@ -29,7 +29,6 @@ defaults:
        type: "posts"
     values:
        layout: "posts-layout"
-       category: "articles"
   -
     scope:
        path: ""

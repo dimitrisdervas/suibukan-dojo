@@ -26,10 +26,13 @@ $post-layout: layout(auto 12 .50 fluid);
 
 /* Main Post Html */
 .page {
-	@include container;
+	@include full;
 }
 .content {
 	@include span(8 inside of $post-layout);
+}
+.content-full {
+	@include container;
 }
 .sidebar {
 	@include span(4 last inside of $post-layout);
@@ -39,21 +42,6 @@ $post-layout: layout(auto 12 .50 fluid);
     @include sticky-footer(30px, '.page', '.container', '.site-footer');
     @include full;
 }
-.footer-bottom {
-    @include container;
-    .footer-columns {
-        
-    }
-    .footer-left {
-        @include span(4);
-    }
-    .footer-middle {
-        @include span(4);
-    }
-    .footer-right {
-        @include span(4);
-    }
-}
 
 /* Martial Art Details Page */
 .content-details {
@@ -61,4 +49,9 @@ $post-layout: layout(auto 12 .50 fluid);
 }
 .martialart-details ul li {
     @include gallery ( 3 of 12 );
+}
+
+/* Videos Page */
+.videos-page {
+    @include container;
 }

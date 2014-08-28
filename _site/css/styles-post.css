@@ -1,12 +1,10 @@
 /* Main Post Html */
 .page {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto; }
-  .page:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
 
 .content {
   -moz-box-sizing: border-box;
@@ -16,6 +14,15 @@
   float: left;
   padding-left: 1.38889%;
   padding-right: 1.38889%; }
+
+.content-full {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content-full:after {
+    content: " ";
+    display: block;
+    clear: both; }
 
 .sidebar {
   -moz-box-sizing: border-box;
@@ -46,27 +53,6 @@
       padding: 0 0 30px 0; }
   .site-footer .site-footer {
     height: 30px; }
-
-.footer-bottom {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto; }
-  .footer-bottom:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  .footer-bottom .footer-left {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%; }
-  .footer-bottom .footer-middle {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%; }
-  .footer-bottom .footer-right {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%; }
 
 /* Martial Art Details Page */
 .content-details {
@@ -99,172 +85,40 @@
     margin-right: -100%;
     clear: none; }
 
-.site-header-wrapper {
+/* Videos Page */
+.videos-page {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+  .videos-page:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.top {
   clear: both;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0; }
 
-.site-header {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto; }
-  .site-header:after {
-    content: " ";
-    display: block;
-    clear: both; }
+.bottom {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
 
-.logo {
-  width: 23.72881%;
+.left {
+  width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
 
-.menu-wrapper {
-  width: 66.10169%;
+.right {
+  width: 49.15254%;
   float: right;
   margin-right: 0; }
 
-#nav > a {
-  display: none; }
-
-#nav li {
-  position: relative; }
-
-#nav li a {
-  color: #fff;
-  display: block; }
-
-#nav li a:active {
-  background-color: #323232 !important;
-  color: #db3232 !important; }
-
-#nav span:after {
-  width: 0;
-  height: 0;
-  border: 0.313em solid transparent;
-  /* 5 */
-  border-bottom: none;
-  border-top-color: #ddd;
-  content: '';
-  vertical-align: middle;
-  display: inline-block;
-  position: relative;
-  right: -0.313em;
-  /* 5 */ }
-
-/* first level */
-#nav > ul > li {
-  margin-right: 35px;
-  float: left; }
-
-#nav > ul > li > a {
-  text-align: center; }
-
-#nav > ul > li:hover > a,
-#nav > ul:not(:hover) > li.active > a {
-  background-color: transparent;
-  color: #db3232; }
-
-/* second level */
-#nav li ul {
-  background-color: #323232;
-  color: #fff;
-  display: none;
-  position: absolute;
-  top: 100%;
-  width: 150px;
-  border-top: 1px solid #db3232; }
-
-#nav li:hover ul {
-  display: block;
-  left: 0;
-  right: 0; }
-
-#nav li:not(:first-child):hover ul {
-  left: -1px; }
-
-#nav li ul a {
-  color: #fff;
-  padding: 10px; }
-
-#nav li ul li a:hover,
-#nav li ul:not(:hover) li.active a {
-  background-color: #363636;
-  color: #fff; }
-
-@media only screen and (max-width: 62.5em) {
-  #nav {
-    width: 100%;
-    position: static;
-    margin: 0; } }
-@media only screen and (max-width: 40em) {
-  html {
-    font-size: 75%;
-    /* 12 */ }
-
-  #nav {
-    position: relative;
-    top: auto;
-    left: auto; }
-
-  #nav > a {
-    width: 3.125em;
-    /* 50 */
-    height: 3.125em;
-    /* 50 */
-    text-align: left;
-    text-indent: -9999px;
-    background-color: #e15a1f;
-    position: relative; }
-
-  #nav > a:before,
-  #nav > a:after {
-    position: absolute;
-    border: 2px solid #fff;
-    top: 35%;
-    left: 25%;
-    right: 25%;
-    content: ''; }
-
-  #nav > a:after {
-    top: 60%; }
-
-  #nav:not(:target) > a:first-of-type,
-  #nav:target > a:last-of-type {
-    display: block; }
-
-  /* first level */
-  #nav > ul {
-    height: auto;
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0; }
-
-  #nav:target > ul {
-    display: block; }
-
-  #nav > ul > li {
-    width: 100%;
-    float: none; }
-
-  #nav > ul > li > a {
-    height: auto;
-    text-align: left;
-    padding: 0 0.833em;
-    /* 20 (24) */ }
-
-  #nav > ul > li:not(:last-child) > a {
-    border-right: none;
-    border-bottom: 1px solid #cc470d; }
-
-  /* second level */
-  #nav li ul {
-    position: static;
-    padding: 1.25em;
-    /* 20 */
-    padding-top: 0; } }
 body {
   font-family: 'Open Sans' , sans-serif;
   font-weight: 400;
@@ -302,36 +156,23 @@ a {
 a, a:hover {
   text-decoration: none; }
 
-body {
-  background-color: #f2f2f2;
-  margin: 0; }
+a:hover {
+  color: #B40133; }
 
-.page {
-  margin-bottom: 12em; }
-
-.site-header-wrapper {
-  background: #363636;
-  margin-bottom: 4em; }
-
-.site-header {
-  padding: 1.3em 0; }
-  .site-header a {
-    color: #fff; }
-
-.logo a {
-  font-size: 2em;
-  font-weight: bold;
-  font-family: "Oswald"; }
+.place h1 {
+  font-size: 4em;
+  margin-bottom: 1em; }
+.place p {
+  margin-bottom: 2em; }
 
 .content .content-inner {
   float: left;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-top: 45px;
   padding-bottom: 45px;
   background: #ffffff; }
 .content h1, .content h1 a {
-  margin-bottom: 2em; }
+  font-size: 3rem;
+  margin-bottom: 2.5rem; }
 .content .post-more {
   margin-bottom: 2em; }
 .content .post-img {
@@ -339,10 +180,10 @@ body {
   background: #ffffff; }
 .content .continue-reading {
   float: right;
-  background: #f2f2f2;
+  background: #ddd;
   padding: 5px 20px; }
   .content .continue-reading:hover {
-    background: #db3232; }
+    background: #B40133; }
   .content .continue-reading a {
     color: #333333;
     font-size: 0.9em; }
@@ -369,7 +210,7 @@ body {
       display: block;
       float: left;
       padding: 5px 0;
-      border-bottom: 1px #f2f2f2 solid; }
+      border-bottom: 1px #fff solid; }
       .sidebar .sidebar-block ul li a .icon-container {
         fill: #fff;
         width: 24px;
@@ -377,8 +218,8 @@ body {
         display: inline-block;
         line-height: 4em; }
       .sidebar .sidebar-block ul li a:hover {
-        color: #db3232;
-        background: #f2f2f2; }
+        color: #B40133;
+        background: #fff; }
         .sidebar .sidebar-block ul li a:hover .icon-container {
           fill: #d4d4d4; }
       .sidebar .sidebar-block ul li a .list-item {
@@ -389,28 +230,3 @@ body {
         float: left;
         padding-left: 2.5%;
         padding-right: 2.5%; }
-
-.site-footer {
-  background: #363636;
-  color: #f2f2f2; }
-  .site-footer a, .site-footer h3 {
-    color: #f2f2f2; }
-
-/* Martial Art Details Page */
-.martialart-details h1 {
-  margin-bottom: 2em; }
-.martialart-details ul li {
-  background: #444444;
-  text-align: center;
-  text-transform: uppercase;
-  width: 260px;
-  margin-top: -4px;
-  margin-bottom: 4em;
-  color: #fff; }
-  .martialart-details ul li h3 {
-    min-height: 54px; }
-  .martialart-details ul li h3 a {
-    color: #fff;
-    font-size: 18px;
-    padding: 20px 10px;
-    margin-bottom: 30px; }

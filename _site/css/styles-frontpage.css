@@ -593,9 +593,9 @@ body {
   text-align: center; }
 
 .articles-section {
-  /*
-  * Caption component
-  */ }
+   /*
+* Caption component
+*/ }
   .articles-section .blog-text-front h5 a {
     color: #fff;
     font-weight: bold; }
@@ -616,37 +616,9 @@ body {
     color: white;
     background: rgba(0, 0, 0, 0.5);
     padding-left: 20px; }
-  .articles-section ul {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto; }
-    .articles-section ul:after {
-      content: " ";
-      display: block;
-      clear: both; }
   .articles-section .read-more {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem 0; }
-    .articles-section .read-more:after {
-      content: " ";
-      display: block;
-      clear: both; }
-    .articles-section .read-more .continue-reading-front {
-      background: #ddd;
-      margin: 0 auto;
-      width: 150px;
-      float: none; }
-      .articles-section .read-more .continue-reading-front:hover {
-        background: #B40133; }
-        .articles-section .read-more .continue-reading-front:hover a {
-          color: #fff; }
-      .articles-section .read-more .continue-reading-front a {
-        color: #333333;
-        font-size: 0.9em; }
-        .articles-section .read-more .continue-reading-front a:hover {
-          color: #fff; }
+    background: #fff;
+    text-align: center; }
 
 .videos-section .container-front {
   display: block; }
@@ -656,9 +628,6 @@ body {
 .videos-section h2 {
   font-size: 1.8em;
   padding-bottom: 2em; }
-.videos-section h3 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem; }
 
 /* Google map */
 .gm-style-iw {
@@ -668,101 +637,6 @@ body {
     font-size: 2em; }
   .gm-style-iw h3 {
     font-size: 1.3em; }
-
-.place h1 {
-  font-size: 4em;
-  margin-bottom: 1em; }
-.place p {
-  margin-bottom: 2em; }
-
-.content .content-inner,
-.content-full .content-inner {
-  float: left;
-  margin-bottom: 3rem; }
-.content h1, .content h1 a,
-.content-full h1,
-.content-full h1 a {
-  font-size: 3rem;
-  margin-bottom: 2.5rem; }
-.content p,
-.content-full p {
-  margin-bottom: 2rem; }
-.content .post-more,
-.content-full .post-more {
-  margin-bottom: 2em; }
-.content .post-img,
-.content-full .post-img {
-  float: left;
-  background: #ffffff;
-  margin-bottom: 2rem; }
-.content .continue-reading,
-.content-full .continue-reading {
-  float: right;
-  background: #ddd;
-  padding: 5px 20px; }
-  .content .continue-reading:hover,
-  .content-full .continue-reading:hover {
-    background: #B40133; }
-    .content .continue-reading:hover a,
-    .content-full .continue-reading:hover a {
-      color: #fff; }
-  .content .continue-reading a,
-  .content-full .continue-reading a {
-    color: #333333;
-    font-size: 0.9em; }
-    .content .continue-reading a:hover,
-    .content-full .continue-reading a:hover {
-      color: #fff; }
-
-.sidebar .sidebar-content {
-  float: left;
-  padding: 0px 30px 30px;
-  background-color: #fff; }
-  .sidebar .sidebar-content .sidebar-block {
-    margin-bottom: 2em; }
-  .sidebar .sidebar-content h3 {
-    font-weight: 700;
-    font-family: 'Roboto Slab' , sans-serif;
-    margin-bottom: 0.8em; }
-
-.sidebar .sidebar-block {
-  float: left;
-  width: 100%; }
-  .sidebar .sidebar-block ul li {
-    list-style: none; }
-    .sidebar .sidebar-block ul li a {
-      width: 100%;
-      font-size: 0.9em;
-      display: block;
-      float: left;
-      padding: 5px 0;
-      border-bottom: 1px #fff solid; }
-      .sidebar .sidebar-block ul li a .icon-container {
-        fill: #fff;
-        width: 24px;
-        height: 24px;
-        display: inline-block;
-        line-height: 4em; }
-      .sidebar .sidebar-block ul li a:hover {
-        color: #B40133;
-        background: #fff; }
-        .sidebar .sidebar-block ul li a:hover .icon-container {
-          fill: #d4d4d4; }
-      .sidebar .sidebar-block ul li a .list-item {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 90%;
-        float: left;
-        padding-left: 2.5%;
-        padding-right: 2.5%; }
-
-/* Videos Page */
-.videos-page {
-  margin-bottom: 8rem; }
-  .videos-page h2 {
-    font-size: 3rem;
-    line-height: 3.5rem; }
 
 .site-footer {
   background: #363636;

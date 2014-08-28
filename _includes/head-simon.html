@@ -10,7 +10,7 @@
         <!-- CSS -->  
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700/Roboto+Slab:400,700/Roboto+Condensed:400,700/Oswald:400,700">
-    <link rel="stylesheet" href="{{ "/css/styles-simon.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="/css/styles-simon.css">
 <!--     http://themes.simonbouchard.com/theagency-v2/home/home-4/ -->
         <!-- Modernizr -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
@@ -30,30 +30,26 @@
         var strStart = '2014'; 
         var strYear = new Date(); 
         if (strStart == strYear.getFullYear()) { jQuery("#copyright_year").html(strStart); } 
-        else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear()); 
-             
-         
-     </script>
-    
-    <script>
-            $(window).load(function() {
-            $('img.caption').captionjs({
-                'class_name'      : 'captionjs', // Class name assigned to each <figure>
-                'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
-                'mode'            : 'hide',   // default | static | animated | hide
-                'debug_mode'      : false,       // Output debug info to the JS console
-                'force_dimensions': false        // Force the dimensions in case they can't be detected (e.g., image is not yet painted to viewport)
+        else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear());</script>
+        <script>
+                $(window).load(function() {
+                $('img.caption').captionjs({
+                    'class_name'      : 'captionjs', // Class name assigned to each <figure>
+                    'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
+                    'mode'            : 'hide',   // default | static | animated | hide
+                    'debug_mode'      : false,       // Output debug info to the JS console
+                    'force_dimensions': false        // Force the dimensions in case they can't be detected (e.g., image is not yet painted to viewport)
+                });
             });
-        });
-    </script>
-    
-          <script>
+        </script>
+    <script>
             // Elements to inject
             var mySVGsToInject = document.querySelectorAll('.iconic-sprite');
 
             // Do the injection
             SVGInjector(mySVGsToInject);
-          </script>
+         </script>
+       
+        {% include googlemap-simon.html %}
     
-{% include googlemap-simon.html %}
     </head>

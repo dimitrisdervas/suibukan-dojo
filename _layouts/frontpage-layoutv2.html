@@ -15,9 +15,11 @@
                   <img src="{{ image.path }}">
                     <div class="container-slideshow">
                         <div class="container-slideshow-inner">
-                            <h1>Shorin Ryu Karate Do</h1>
+                           <h1><a href="/martialarts/karate-gr">Shorin Ryu Karate Do</a></h1>
+                            <h3>Nεό τμήμα στη Τούμπα στο <a href="#map-canvas">Dojo Technican.</a></h3>
                             <span class="line white small"></span>
-                            <p>Το Shorin Ryu Karate είναι ένα παραδοσιακό στυλ καράτε, μη αγωνιστικό, πιστό στην παράδοση της Οκινάβας. Ξεκινάει μια καινούρια χρονιά και νεό τμήμα στη Τούμπα στο Dojo Technican.</p>
+                            <p>Το <a href="/martialarts/karate-gr/">Shorin Ryu Karate</a> είναι ένα παραδοσιακό στυλ καράτε, μη αγωνιστικό, πιστό στην παράδοση της Οκινάβας.</p>
+                            <div class="continue-reading-front"><a href="/martialarts/karate-gr/">Περισσότερα</a></div>
                         </div>
                     </div>
                 </li>
@@ -61,7 +63,7 @@
              <h5 class="section-title">Άρθρα</h5>
               <span class="line small red"></span> 
                  <ul>
-                   {% for post in site.categories['articles'] %} 
+                   {% for post in site.categories['articles'] limit: 4 %} 
                          <li class="articles-list">
                                  <div class="article caption">
                                       <div class="article-img caption__media">
@@ -73,18 +75,13 @@
                                          </div>
                                   </div>
                              </li>           
-                      {% endfor %}   
-                         <li>
+                      {% endfor %}                               
+                  </ul>
                              <div class="read-more"> 
-                                  <div class="continue-reading">
-                                      <a href="/articles">Περισσότερα Άρθρα</a>
-                                       <span class="icon-container">
-                                          <svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg>
-                                        </span>   
+                                  <div class="continue-reading-front">
+                                      <a href="/articles">Περισσότερα Άρθρα</a> 
                                  </div>    
                              </div>
-                         </li>
-                  </ul>
              </div>
       </section>
         
@@ -92,9 +89,9 @@
         
       <section class="videos-section section-full">          
          <div class="container-front">
-              <h1 class="section-title">Videos</h1>
-           {% for video in site.data.videos limit:1 %} 
-                 
+           <h5 class="section-title">Videos</h5>
+              <span class="line small red"></span> 
+           {% for video in site.data.videos limit:1 %}                  
                      <h2> {{ video.title }} </h2>
                      <div class="videos-left">
                          <iframe width="640" height="360"  src="//www.youtube.com/embed/{{ video.url }}?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -103,7 +100,7 @@
                            <div class="videos-right"> 
                                <h2> Περισσότερα video</h2>
                                  {% for video in site.data.videos offset:1 %}                               
-                                  <h3> {{ video.title }} </h3>                                                       
+                                  <h3><a href="/videos/#{{ video.url }}">{{ video.title }} </a><span>{{ video.duration }}</span></h3>                                                      
                                   {% endfor %}
                               </div>                         
                           

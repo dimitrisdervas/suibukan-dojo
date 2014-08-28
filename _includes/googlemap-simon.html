@@ -4,7 +4,7 @@ http://bdadam.com/blog/simple-usability-trick-for-google-maps.html -->
 
 <script>
 var LocationData = [
-    [40.606991, 22.997580, "Dojo Technican","Suibukan","697.644.1064"]
+    [40.606991, 22.997580, "Dojo Technican","Suibukan","697.644.1064","http://www.tenchikan.gr/images/2.jpg"]
 ];
 
 
@@ -13,7 +13,7 @@ function initialize()
 {
     var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 8,
+                    zoom: 12,
 
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(40.605351,22.994972), // Touba
@@ -266,17 +266,17 @@ function initialize()
             map: map,
             title: p[3],
             mob: p[4],
-            by: p[2]
+            by: p[2],
+            img: p[5]
         });
         
         
         google.maps.event.addListener(marker, 'click', function() {
-            infowindow.setContent( "<h3>" + this.title + "</h3>"  +  this.by + this.mob );
+            infowindow.setContent( "<h2>" + this.title + "</h2>"  + "<img src=\" " + this.img + "\"</img>" + "<h3>" + this.by + "</h3>" + "<h3>" + this.mob + "</h3>");
             infowindow.open(map, this);
         });
     }
-
-    map.fitBounds(bounds);
+    
     var listener = google.maps.event.addListener(map, "idle", function() { 
       if (map.getZoom() > 16) map.setZoom(12); 
       google.maps.event.removeListener(listener); 
