@@ -8,9 +8,6 @@
     padding: 3%;
 }
 .container-slideshow {
-    position: absolute;
-    width: 100%;
-    top: 340px;
     .container-slideshow-inner {
         @include container;
     }

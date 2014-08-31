@@ -11,9 +11,8 @@
           <div class="slideshow">
             <ul class="slides">
               {% for image in site.data.slideshow-images limit:1 %}
-                <li>
-                  <img src="{{ image.path }}">
-                    <div class="container-slideshow">
+                <li style="background: url( {{ image.path }}) no-repeat;background-size: cover;">
+                    <div class="container-slideshow" >
                         <div class="container-slideshow-inner">
                            <h1><a href="/martialarts/karate-gr">Shorin Ryu Karate Do</a></h1>
                             <h3>Nεό τμήμα στη Τούμπα στο <a href="#map-canvas">Dojo Technican.</a></h3>
@@ -94,7 +93,9 @@
            {% for video in site.data.videos limit:1 %}                  
                      <h2> {{ video.title }} </h2>
                      <div class="videos-left">
+                         <div class="video-player-responsive">
                          <iframe width="640" height="360"  src="//www.youtube.com/embed/{{ video.url }}?rel=0" frameborder="0" allowfullscreen></iframe>
+                         </div>
                      </div>
                   {% endfor %}
                            <div class="videos-right"> 

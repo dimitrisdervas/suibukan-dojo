@@ -15,18 +15,14 @@
     display: block;
     clear: both; }
 
-.container-slideshow {
-  position: absolute;
-  width: 100%;
-  top: 340px; }
-  .container-slideshow .container-slideshow-inner {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto; }
-    .container-slideshow .container-slideshow-inner:after {
-      content: " ";
-      display: block;
-      clear: both; }
+.container-slideshow .container-slideshow-inner {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container-slideshow .container-slideshow-inner:after {
+    content: " ";
+    display: block;
+    clear: both; }
 
 .martialarts-section ul li {
   width: 32.20339%;
