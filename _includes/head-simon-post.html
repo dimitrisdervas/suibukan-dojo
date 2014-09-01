@@ -10,35 +10,29 @@
         <!-- CSS -->  
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700/Roboto+Slab:400,700/Roboto+Condensed:400,700/Oswald:400,700">
-    <link rel="stylesheet" href="{{ "/css/styles-post.css" | prepend: site.baseurl }}">
-<!--     http://themes.simonbouchard.com/theagency-v2/home/home-4/ -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles-simon.css">
+<!-- http://themes.simonbouchard.com/theagency-v2/home/home-4/ -->
         <!-- Modernizr -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>   
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="/js/capital.gr.js" ></script> 
-    <script src="/js/svg-injector.min.js" ></script> 
-<!--         http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly -->
-    <script src="/js/doubletaptogo.min.js" ></script> 
+    <script type="text/javascript" src="{{ site.baseurl }}/js/capital.gr.js " ></script> 
+    <script type="text/javascript" src="{{ site.baseurl }}/js/caption.min.js" ></script>    
+    <script type="text/javascript" src="{{ site.baseurl }}/js/svg-injector.min.js" ></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/copyright-year.js" ></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/google-maps.js" ></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+<!-- http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly -->
+    <script type="text/javascript"  src="/js/doubletaptogo.min.js" ></script> 
     <script>$( '#nav li:has(ul)' ).doubleTapToGo();</script>
     
-    <!--     Footer date autoupdate -->
     <script>
-    jQuery(document).ready(function() { 
-    var strStart = '2014'; 
-    var strYear = new Date(); 
-    if (strStart == strYear.getFullYear()) { jQuery("#copyright_year").html(strStart); } 
-    else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear()); } }); 
-     </script>
-    
-      <script>
             // Elements to inject
             var mySVGsToInject = document.querySelectorAll('.iconic-sprite');
 
             // Do the injection
             SVGInjector(mySVGsToInject);
-      </script>
-    
-    {% include googlemap-simon.html %}
+         </script>
+       
     
     </head>
