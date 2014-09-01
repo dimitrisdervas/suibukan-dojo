@@ -78,7 +78,7 @@
                   </ul>
                              <div class="read-more"> 
                                   <div class="continue-reading-front">
-                                      <a href="/articles">Περισσότερα Άρθρα</a> 
+                                      <a href="{{ site.baseurl }}/articles">Περισσότερα Άρθρα</a> 
                                  </div>    
                              </div>
              </div>
@@ -101,7 +101,7 @@
                            <div class="videos-right"> 
                                <h2> Περισσότερα video</h2>
                                  {% for video in site.data.videos offset:1 %}                               
-                                  <h3><a href="/videos/#{{ video.url }}">{{ video.title }} </a><span>{{ video.duration }}</span></h3>                                                      
+                                  <h3><a href="{{ site.baseurl }}/videos/#{{ video.url }}">{{ video.title }} </a><span>{{ video.duration }}</span></h3>                                                      
                                   {% endfor %}
                               </div>                         
                           

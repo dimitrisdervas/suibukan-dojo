@@ -18,21 +18,25 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/capital.gr.js " ></script> 
     <script type="text/javascript" src="{{ site.baseurl }}/js/caption.min.js" ></script>    
-    <script type="text/javascript" src="{{ site.baseurl }}/js/svg-injector.min.js" ></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/copyright-year.js" ></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/svg-injector.map.js" ></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/copyright-year.js" ></script>    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>    
     <script type="text/javascript" src="{{ site.baseurl }}/js/google-maps.js" ></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-<!-- http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly -->
-    <script type="text/javascript"  src="/js/doubletaptogo.min.js" ></script> 
-    <script>$( '#nav li:has(ul)' ).doubleTapToGo();</script>
-    
+    <script>             
+        $(window).load(function() {
+                  $('img.caption').captionjs({
+                      'class_name'      : 'captionjs', // Class name assigned to each <figure>
+                      'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
+                      'mode'            : 'hide',   // default | static | animated | hide
+                      'debug_mode'      : false,       // Output debug info to the JS console
+                      'force_dimensions': false        // Force the dimensions in case they can't be detected (e.g., image is not yet painted to viewport)
+                  });
+              });
+    </script>
     <script>
-            // Elements to inject
+        // Elements to inject
             var mySVGsToInject = document.querySelectorAll('.iconic-sprite');
-
             // Do the injection
             SVGInjector(mySVGsToInject);
          </script>
-       
-    
     </head>

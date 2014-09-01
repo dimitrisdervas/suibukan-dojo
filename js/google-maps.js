@@ -2,7 +2,6 @@ var LocationData = [
     [40.606991, 22.997580, "Dojo Technican","Suibukan","697.644.1064","http://www.tenchikan.gr/images/2.jpg"]
 ];
 
-
     
 function initialize()
 {
