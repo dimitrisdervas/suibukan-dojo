@@ -29,33 +29,3 @@ defaults:
        type: "posts"
     values:
        layout: "posts-layout"
-  -
-    scope:
-       path: ""
-       type: "karatemasters"
-    values:
-       layout: "posts-layout"
-  -
-    scope:
-       path: ""
-       type: "kobudomasters"
-    values:
-       layout: "posts-layout"
-  -
-    scope:
-       path: ""
-       type: "karatekata"
-    values:
-       layout: "posts-layout"  
-  -
-    scope:
-       path: ""
-       type: "kobudokata"
-    values:
-       layout: "posts-layout"
-  -
-    scope:
-       path: "martialarts"
-       type: "posts"
-    values:
-       layout: "posts-layout"
