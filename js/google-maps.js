@@ -1,8 +1,3 @@
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-<!-- Added this tip
-http://bdadam.com/blog/simple-usability-trick-for-google-maps.html -->
-
-<script>
 var LocationData = [
     [40.606991, 22.997580, "Dojo Technican","Suibukan","697.644.1064","http://www.tenchikan.gr/images/2.jpg"]
 ];
@@ -283,5 +278,3 @@ function initialize()
     });
 }
  google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
