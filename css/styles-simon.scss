@@ -127,7 +127,64 @@ margin:0;
         text-align: center;
     }
 }
-
+.contact-section {
+    textarea, 
+    select, 
+    input[type="date"], 
+    input[type="datetime"], 
+    input[type="datetime-local"],
+    input[type="email"], 
+    input[type="month"], 
+    input[type="number"], 
+    input[type="password"], 
+    input[type="search"], 
+    input[type="tel"], 
+    input[type="text"], 
+    input[type="time"], 
+    input[type="url"],
+    input[type="week"] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-background-clip: padding;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        -webkit-appearance: none;
+        background-color: white;
+        border: 1px solid;
+        border-color: none;
+        color: black;
+        outline: 0;
+        margin: 0;
+        padding: 2px 3px;
+        text-align: left;
+        font-size: 18px;
+        height: 2.5em;
+        vertical-align: top;
+        }
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+        align-items: flex-start;
+        text-align: center;
+        cursor: default;
+        color: buttontext;
+        padding: 2px 6px 3px;
+        border: 2px outset buttonface;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+        background-color: buttonface;
+        box-sizing: border-box;
+        }
+}
 .articles-section {
     .blog-text-front h5 a {
         color: #fff;
