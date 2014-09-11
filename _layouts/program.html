@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head-simon.html %}
+
+    <body>
+
+        {% include header-simon-include.html %}
+
+    <div class="page">
+        <div id="map-canvas"></div>
+        <div class="container-front">
+             <div class="content-full">                 
+                 {% for program in site.categories['program'] %}
+                 <section class="schedule-section">
+                       <h1>{{ program.title }}</h1>
+                        <h3>{{ program.address }}</h3>
+                       <div>
+                           {{ program.content }}
+                           </div>
+                     </section>
+                 {% endfor %}
+            </div>            
+        </div>
+    </div>
+
+    {% include footer-include.html %}
+        
+    {% include bottom-post.html %}
+
+    </body>
+</html>

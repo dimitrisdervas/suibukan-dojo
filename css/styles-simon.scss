@@ -120,6 +120,19 @@ margin:0;
         font-size: 1.2em;
         line-height: 5em;        
     }
+    table {
+        width: 100%;
+        text-align: center;
+        thead tr th {
+            font-size: 2em;
+			font-weight: bold;
+            line-height: 3em;
+        }
+        tbody tr td {
+        font-size: 1.2em;
+        line-height: 5em;
+    	}
+    }
 }
 
 .martialarts-section {
