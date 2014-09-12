@@ -53,6 +53,10 @@ prose:
         field:
           element: "hidden"
           value: "posts-layout"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
       - name: "permalink"
         field:
           element: "text"
@@ -63,6 +67,10 @@ prose:
         field:
           element: "hidden"
           value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
       - name: "permalink"
         field:
           element: "text"
@@ -73,6 +81,10 @@ prose:
         field:
           element: "hidden"
           value: "posts-layout"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
       - name: "tags"
         field:
           element: "multiselect"
