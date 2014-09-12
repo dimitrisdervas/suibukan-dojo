@@ -1,5 +1,9 @@
 var LocationData = [
-    [40.606991, 22.997580, "Dojo Technican","Suibukan","697.644.1064","http://www.tenchikan.gr/images/2.jpg"]
+    [40.606991, 22.997580, "Dojo Technican","Suibukan","6936.969.942","http://www.tenchikan.gr/images/2.jpg"],
+    [40.626758, 22.965183, "Καυταντζόγλειο","Suibukan","6936.969.942"],
+    [40.635379, 22.936829, "Wu Shu","Suibukan","6936.969.942"],
+    [40.585009, 22.965607, "Σύλλογος Ν.Βότσης","Suibukan","6936.969.942"],
+    [40.648910, 22.947167, "Μακεδονικός Σύλλογος Suibukan","Suibukan","6936.969.942"]
 ];
 
     
@@ -271,9 +275,9 @@ function initialize()
         });
     }
     
-    var listener = google.maps.event.addListener(map, "idle", function() { 
-      if (map.getZoom() > 16) map.setZoom(12); 
-      google.maps.event.removeListener(listener); 
-    });
+//     var listener = google.maps.event.addListener(map, "idle", function() { 
+//       if (map.getZoom() > 16) map.setZoom(12); 
+//       google.maps.event.removeListener(listener); 
+//     });
 }
  google.maps.event.addDomListener(window, 'load', initialize);

@@ -18,6 +18,7 @@ $border: #E9E9E9;
 $link-hover: #B40133;
 $icon-hover: #d4d4d4;
 
+
 body {
 background-color: $bg-body;
 margin:0;
@@ -50,9 +51,10 @@ margin:0;
 }
 // Slideshow
 .slideshow-section {
-    li {
-        
-    }
+     ul.dojo-regions  li {
+			float: left;
+            margin-right: 8rem;
+        }
     .container-slideshow-inner {
             background: rgba(255, 255, 255, 0.3);
             padding: 10em;   
@@ -64,6 +66,8 @@ margin:0;
         }
         h3 {
             font-size: 2rem;
+            display: inline;
+            margin-right: 2rem;
         }
         p {
             font-size: 1.5rem;
@@ -73,7 +77,7 @@ margin:0;
     }
 }
 .continue-reading-front {
-    float: left;
+    display: inline-block;
     background: $bg-body;
     padding: 5px 20px;         
     &:hover {
@@ -106,26 +110,26 @@ margin:0;
     border-top: 2px solid #A02E2E;
 }
 
-.schedule-section {
-    ul li {
-        @include gallery (4 of 12);
-        text-align: center;
-    }
-    .schedule-days {
-        display: block;
-        font-size: 2em;
-		font-weight: bold;
-    }
-    .schedule-time {
-        font-size: 1.2em;
-        line-height: 5em;        
-    }
-}
+
 
 .martialarts-section {
 	.martialarts-list {
         text-align: center;
     }
+}
+
+.regions-section {
+    background: #f7f7f7;    
+    ul {
+
+        li {
+			float: left;
+            margin-right: 4rem;
+        }
+        h1 {
+			font-size: 1.8rem;
+        }        
+    }    
 }
 .contact-section {
     textarea, 
@@ -184,6 +188,22 @@ margin:0;
         background-color: buttonface;
         box-sizing: border-box;
         }
+    ul li {
+        @include gallery(6 of 12);
+        text-align: center;
+        a{
+            font-size: 2rem;
+        }
+    }
+    .fa-5 {
+        font-size: 5rem;
+    }
+    .mail-icon {
+        display: inline-block;
+    }
+    .submit-button {
+        display: inline;
+    }
 }
 .articles-section {
     .blog-text-front h5 a {
@@ -411,5 +431,25 @@ margin:0;
     }
     a,h3 {
         color: #fff;
+    }
+}
+
+/* Program Page */
+.schedule-section {
+    h1{
+      margin-bottom: 0;
+    }
+    table {
+        width: 100%;
+        text-align: center;
+        thead tr th {
+            font-size: 2em;
+			font-weight: bold;
+            line-height: 3em;
+        }
+        tbody tr td {
+        font-size: 1.2em;
+        line-height: 5em;
+    	}
     }
 }

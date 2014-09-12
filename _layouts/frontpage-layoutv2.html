@@ -15,10 +15,10 @@
                     <div class="container-slideshow" >
                         <div class="container-slideshow-inner">
                            <h1><a href="/martialarts/karate-gr">Shorin Ryu Karate Do</a></h1>
-                            <h3>Nεό τμήμα στη Τούμπα στο <a href="#map-canvas">Dojo Technican.</a></h3>
+                            <h3><a href="{{ site.baseurl }}/news">Nέα τμήματα στη Θεσσαλονίκη</a></h3>
+                            <div class="continue-reading-front"><a href="{{ site.baseurl }}/news">Περισσότερα</a></div>
                             <span class="line white small"></span>
-                            <p>Το <a href="/martialarts/karate-gr/">Shorin Ryu Karate</a> είναι ένα παραδοσιακό στυλ καράτε, μη αγωνιστικό, πιστό στην παράδοση της Οκινάβας.</p>
-                            <div class="continue-reading-front"><a href="/martialarts/karate-gr/">Περισσότερα</a></div>
+                            <p>Το <a href="/martialarts/karate-gr/">Shorin Ryu Karate</a> είναι ένα παραδοσιακό στυλ καράτε, μη αγωνιστικό, πιστό στην παράδοση της Οκινάβας.</p>                            
                         </div>
                     </div>
                 </li>
@@ -26,47 +26,71 @@
               </ul>
           </div>
         </section>
-
-
         
-     <section class="schedule-section section-full">          
-         <div class="container-front">
-              <h5 class="section-title">Πρόγραμμα</h5>
-             <span class="line small red"></span> 
-                    <ul>
-                     <li><span class="schedule-days">Τρίτη</span> <span class="schedule-time">7:00 - 8:00</span></li>
-                     <li><span class="schedule-days">Τετάρτη</span> <span class="schedule-time">7:00 - 8:00</span></li>
-                     <li><span class="schedule-days">Σάββατο</span> <span class="schedule-time">6.00 - 7.30</span></li>
-                 </ul>            
-             </div>
-      </section>
-        
-        <section class="contact-section section-full">          
-            <div class="container-front">
-                <h5 class="section-title">Επικοινωνία</h5>
-                <span class="line small red"></span> 
-                Ενημερωθείτε πότε ξεκινάμε και το πρόγραμμα
-                <form method="POST" action="//forms.brace.io/dimitris@techangel.gr">
-                    <label for="email">email</label>
-                    <input type="email" name="_replyto">
-                    <input type="submit" value="Αποστολή">
-                </form>
-            </div>
+         <section class="regions-section section-full">
+             <div class="container-front">
+              <ul class="dojo-regions"> 
+                     {% for dojo in site.categories['dojo'] %}                            
+                                <li>
+                                    <h1><a href="{{ site.baseurl }}/program">{{ dojo.region | uppercase }}</a></h1>
+                                </li>                                                 
+                        {% endfor %}
+                    </ul>
+             </div>             
         </section>
         
-<!--        <section class="martialarts-section section-full">
+
+          <section class="news-section section-full">
+              <div class="container-front">
+                  <h5 class="section-title">Τα νέα μας</h5>
+                    <span class="line small red"></span> 
+                      {% for news in site.tags.['sticky'] %}
+                          <div class="content-inner">                   
+                              <h1><a href="{{ site.baseurl }}/news">{{ news.title}}</a> </h1>
+                              <div class="post-more">
+                                  {{ news.content  }}
+                              </div>
+                          </div>		   	
+                         {% endfor %}
+                  </div>
+        </section>
+        
+                    <section class="contact-section section-full">          
+                                <div class="container-front">
+                                    <h5 class="section-title">Μείνετε ενημερωμένοι</h5>
+                                    <span class="line small red"></span> 
+                                    <ul>
+                                        <li>
+                                            <a href="https://facebook.com/thes.suibukan"><i class="fa fa-facebook fa-5"></i>/thes.suibukan</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://eepurl.com/29nnX"><i class="fa fa-envelope fa-5"></i>/email-newsletter</a>                                       
+                                        </li>
+                                    </ul>                           
+                                 </div>
+                        </section>
+        
+         <section class="videos-section section-full">          
          <div class="container-front">
-              <h5 class="section-title">Τι Διδάσκουμε</h5>
+           <h5 class="section-title">Videos</h5>
               <span class="line small red"></span> 
-             <ul>
-                   {% for post in site.categories['martialarts'] %} 
-                         <li class="martialarts-list">
-                                 <h5 class="martiarts-title"> <a href="{{ post.url }}">{{ post.title }} {{ post.part }} </a></h5>
-                             </li>        
-                      {% endfor %}   
-                  </ul>
+           {% for video in site.data.videos limit:1 %}                  
+                     <h2> {{ video.title }} </h2>
+                     <div class="videos-left">
+                         <div class="video-player-responsive">
+                         <iframe width="640" height="360"  src="//www.youtube.com/embed/{{ video.url }}?rel=0" frameborder="0" allowfullscreen></iframe>
+                         </div>
+                     </div>
+                  {% endfor %}
+                           <div class="videos-right"> 
+                               <h2> Περισσότερα video</h2>
+                                 {% for video in site.data.videos offset:1 %}                               
+                                  <h3><a href="{{ site.baseurl }}/videos/#{{ video.url }}">{{ video.title }} </a><span>{{ video.duration }}</span></h3>                                                      
+                                  {% endfor %}
+                              </div>        
              </div>
-      </section> -->
+      </section>
+
      
             
       <section class="articles-section section-full">          
@@ -98,28 +122,7 @@
         
   
         
-      <section class="videos-section section-full">          
-         <div class="container-front">
-           <h5 class="section-title">Videos</h5>
-              <span class="line small red"></span> 
-           {% for video in site.data.videos limit:1 %}                  
-                     <h2> {{ video.title }} </h2>
-                     <div class="videos-left">
-                         <div class="video-player-responsive">
-                         <iframe width="640" height="360"  src="//www.youtube.com/embed/{{ video.url }}?rel=0" frameborder="0" allowfullscreen></iframe>
-                         </div>
-                     </div>
-                  {% endfor %}
-                           <div class="videos-right"> 
-                               <h2> Περισσότερα video</h2>
-                                 {% for video in site.data.videos offset:1 %}                               
-                                  <h3><a href="{{ site.baseurl }}/videos/#{{ video.url }}">{{ video.title }} </a><span>{{ video.duration }}</span></h3>                                                      
-                                  {% endfor %}
-                              </div>                         
-                          
-              
-             </div>
-      </section>
+     
 
      
         
