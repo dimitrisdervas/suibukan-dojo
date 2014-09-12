@@ -1,9 +1,9 @@
 var LocationData = [
-    [40.606991, 22.997580, "Dojo Technican","Suibukan","6936.969.942","http://www.tenchikan.gr/images/2.jpg"],
-    [40.626758, 22.965183, "Καυταντζόγλειο","Suibukan","6936.969.942"],
-    [40.635379, 22.936829, "Wu Shu","Suibukan","6936.969.942"],
-    [40.585009, 22.965607, "Σύλλογος Ν.Βότσης","Suibukan","6936.969.942"],
-    [40.648910, 22.947167, "Μακεδονικός Σύλλογος Suibukan","Suibukan","6936.969.942"]
+    [40.606991, 22.997580, "Dojo Thessaloniki","Suibukan","6936.969.942","17ης Νοέμβρη 81, Κωνσταντινοπολίτικα"],
+    [40.626758, 22.965183, "Καυταντζόγλειο","Suibukan","6936.969.942","11 Γυμνάσιο-Λύκειο, (κάτω απο το θέατρο Γης)"],
+    [40.635379, 22.936829, "Wu Shu","Suibukan","6936.969.942","Πλατεία Μοριχόβου 1,( 1ος όροφος ),Λαδάδικα"],
+    [40.585009, 22.965607, "Σύλλογος Ν.Βότσης","Suibukan","6936.969.942","Ανατ. Θράκης 29, Καλαμαριά"],
+    [40.648910, 22.947167, "Μακεδονικός Σύλλογος Suibukan","Suibukan","6936.969.942","Νικ. Παρασκευά 36, (κοντά στο Δημαρχείο)"]
 ];
 
     
@@ -265,12 +265,12 @@ function initialize()
             title: p[3],
             mob: p[4],
             by: p[2],
-            img: p[5]
+            address: p[5]
         });
         
         
         google.maps.event.addListener(marker, 'click', function() {
-            infowindow.setContent( "<h2>" + this.title + "</h2>"  + "<img src=\" " + this.img + "\"</img>" + "<h3>" + this.by + "</h3>" + "<h3>" + this.mob + "</h3>");
+            infowindow.setContent( "<h2>" + this.title + "</h2>" + "<h3>" + this.by + "</h3>" + "<h3>" + this.mob + "</h3>" + "<p>" + this.address + "</p>" );
             infowindow.open(map, this);
         });
     }
