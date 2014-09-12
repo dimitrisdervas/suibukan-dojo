@@ -1,16 +1,11 @@
-- title: "Αρχική"
-  href: ""
- 
 - title: "Karate"
   href: "martialarts/karate-gr"
  
 - title: "Kobudo"
   href: "martialarts/kobudo-gr"
-
  
 - title: "Suikendo"
-  href: "martialarts/suikendo-gr"
- 
+  href: "martialarts/suikendo-gr" 
  
 - title: "Οργανισμός"
   href: "organization"
@@ -23,3 +18,6 @@
  
 - title: "Νέα"
   href: "news"
+  
+- title: "Πρόγραμμα"
+  href: "program"
