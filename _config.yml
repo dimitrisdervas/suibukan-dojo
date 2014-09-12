@@ -42,7 +42,6 @@ prose:
     - js
     - _data
     - _sass
-    - news
     - place
     - program
     - videos
