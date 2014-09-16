@@ -1,21 +1,13 @@
 # Site settings
-title: SuiBuKan DOJO Thessaloniki
+title: SuiBuKan Thessaloniki
 email: dervas@suibukan.com
-description: "Shorin Ryu Karate clubs in Thessaloniki by Suibukan"
+description: "Suibukan - Shorin Ryu Karate in Thessaloniki by Suibukan"
 baseurl: ""
 url: "http://thes.suibukan.com"
 sass:
     sass_dir: _sass
-collections:
-  karatemasters:
-    output: true
-  kobudomasters:
-    output: true
-  karatekata:
-    output: true
-  kobudokata:
-    output: true
-     
+gems:
+  - jekyll-sitemap
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
