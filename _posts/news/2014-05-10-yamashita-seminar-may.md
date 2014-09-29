@@ -1,7 +1,9 @@
 ---
-title: Καλοκαιρινό Σεμινάριο, Σεπ 2014
+layout: "posts-layout"
+title: "Yamashita Seminar, May 2014"
 category: news
-image: http://suibukan.gr/sites/suibukan.com/files/imagecache/node_top_640px/news_photos/yamashita_seminar_2014v2.jpg
+image: "http://suibukan.gr/sites/suibukan.com/files/imagecache/node_top_640px/news_photos/yamashita_seminar_2014v2.jpg"
+published: true
 ---
 
 Το ανοιξιάτικο σεμινάριο του hanshi Tadashi Yamashita στην Ελλάδα.
