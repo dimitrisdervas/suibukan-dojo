@@ -3,8 +3,7 @@ layout: "posts-layout"
 title: "20/9 - Ελεύθερο δοκιμαστικό μάθημα - παρουσίαση"
 category: news
 image: "http://www.tenchikan.gr/images/2.jpg"
-tags: 
-  - sticky
+tags: ""
 published: true
 ---
 
