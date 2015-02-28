@@ -2,6 +2,7 @@
 layout: "posts-layout"
 published: true
 title: Συνέντευξη στο thessalonikipress.gr
+category: news
 tags: 
   - sticky
 ---
