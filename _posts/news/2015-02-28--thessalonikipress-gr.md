@@ -1,7 +1,7 @@
 ---
 layout: "posts-layout"
-published: false
-title: Συνεντευξη στο thessalonikipress.gr
+published: true
+title: Συνέντευξη στο thessalonikipress.gr
 tags: 
   - sticky
 ---
