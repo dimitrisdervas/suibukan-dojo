@@ -30,7 +30,7 @@
          <section class="regions-section section-full">
              <div class="container-front">
               <ul class="dojo-regions"> 
-                     {% for dojo in site.categories['dojo'] %}                            
+                     {% for dojo in site.categories.dojo %}                            
                                 <li>
                                     <h1><a href="{{ site.baseurl }}/program">{{ dojo.region | uppercase }}</a></h1>
                                 </li>                                                 
@@ -44,7 +44,7 @@
               <div class="container-front">
                   <h5 class="section-title">Τα νέα μας</h5>
                     <span class="line small red"></span> 
-                      {% for news in site.tags.['sticky'] %}
+                      {% for news in site.tags.sticky %}
                           <div class="content-inner">                   
                               <h1><a href="{{ site.baseurl }}/news">{{ news.title}}</a> </h1>
                               <div class="post-more">
