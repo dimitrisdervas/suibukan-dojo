@@ -1,25 +1,23 @@
-- title: "Αρχική"
-  href: "/"
- 
 - title: "Karate"
-  href: "/martialarts/karate-gr/"
+  href: "martialarts/karate-gr"
  
 - title: "Kobudo"
-  href: "/martialarts/kobudo-gr/"
-
+  href: "martialarts/kobudo-gr"
  
 - title: "Suikendo"
-  href: "/martialarts/suikendo-gr/"
- 
+  href: "martialarts/suikendo-gr" 
  
 - title: "Οργανισμός"
-  href: "/organization"
+  href: "organization"
   
 - title: "Άρθρα"
-  href: "/articles/"
+  href: "articles"
   
 - title: "Χώρος"
-  href: "/place/"
+  href: "place"
  
 - title: "Νέα"
-  href: "/news/"
+  href: "news"
+  
+- title: "Πρόγραμμα"
+  href: "program"

@@ -1,23 +1,13 @@
 # Site settings
-title: SuiBuKan DOJO Techican
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: SuiBuKan Thessaloniki
+email: dervas@suibukan.com
+description: "Suibukan - Shorin Ryu Karate in Thessaloniki by Suibukan"
 baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://thes.suibukan.com"
 sass:
     sass_dir: _sass
-collections:
-  karatemasters:
-    output: true
-  kobudomasters:
-    output: true
-  karatekata:
-    output: true
-  kobudokata:
-    output: true
-     
+gems:
+  - jekyll-sitemap
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
@@ -29,33 +19,69 @@ defaults:
        type: "posts"
     values:
        layout: "posts-layout"
-  -
-    scope:
-       path: ""
-       type: "karatemasters"
-    values:
-       layout: "posts-layout"
-  -
-    scope:
-       path: ""
-       type: "kobudomasters"
-    values:
-       layout: "posts-layout"
-  -
-    scope:
-       path: ""
-       type: "karatekata"
-    values:
-       layout: "posts-layout"  
-  -
-    scope:
-       path: ""
-       type: "kobudokata"
-    values:
-       layout: "posts-layout"
-  -
-    scope:
-       path: "martialarts"
-       type: "posts"
-    values:
-       layout: "posts-layout"
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http:thes.suibukan.com'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'assets/images'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - css
+    - js
+    - _data
+    - _sass
+    - place
+    - program
+    - videos
+    - faq
+    - organization
+  metadata:
+    _posts/articles:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "posts-layout"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
+    _posts/dojo:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
+    _posts/news:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "posts-layout"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "sticky at top of lists"
+              value: "sticky"

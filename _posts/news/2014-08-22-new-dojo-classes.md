@@ -4,7 +4,7 @@ category: news
 image: http://www.tenchikan.gr/images/2.jpg
 ---
 
-Από 9/9 ξεκινάει καινούριο τμήμα [Shorin Ryu Karate Do](../martialarts/karate-gr) στο [Dojo Technican](../place). 
+Από 16/9 ξεκινάει καινούριο τμήμα [Shorin Ryu Karate Do](../martialarts/karate-gr) στο [Dojo Technican](../place). 
 
 Οι μέρες προπόνησης είναι οι εξής
 
