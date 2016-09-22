@@ -1,8 +1,5 @@
 ---
 title: Kobayashi Shorin Ryu
-category: martialarts
-masters: karatemasters
-kata: karatekata
 icon: http://suibukan.gr/sites/suibukan.com/files/imagecache/Logo_small/Kanji_Karate-Do.gif
 image: https://c2.staticflickr.com/4/3894/14772548096_658b8a9da7_b.jpg
 ---

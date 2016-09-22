@@ -2,7 +2,7 @@
 title: Μακεδονικός Σύλλογος Suibukan
 address: Νικ. Παρασκευά 36, (κοντά στο Δημαρχείο)
 region: Συκιές
-category: dojo
+published: true
 ---
 
 |Τρίτη| Παρασκευή|

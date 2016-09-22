@@ -1,10 +1,5 @@
 ---
 title: Matayoshi Kobudo
-category: martialarts
-masters: kobudomasters
-kata: kobudokata
-weapons: kobudoweapons
-icon: http://suibukan.gr/el/content/53/matayoshi-kobudo
 image: https://c1.staticflickr.com/3/2909/14792417941_d3d22c6655_b.jpg
 ---
 

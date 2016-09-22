@@ -1,7 +1,6 @@
 ---
 title: Suibukan Dojo
 address: '11 Γυμνάσιο-Λύκειο, (κάτω απο το θέατρο Γης)'
-category: dojo
 region: Καυταντζόγλειο
 published: true
 ---
