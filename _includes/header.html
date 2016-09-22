@@ -7,18 +7,8 @@
                         <nav id="nav" role="navigation">
                             <ul>	
                                 {% for menu in site.data.menu %}                     
-                                {% if menu.subcategories != null %}
-                                <li class="editable">
-                                    <a href="#/" aria-haspopup="true">{{ menu.title }}</a>
-                                    <ul>
-                                        {% for subcategory in menu.subcategories %}
-                                        <li><a href="{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
-                                        {% endfor %}
-                                    </ul>
-                                    {% else %} <!-- display the top level navigation for items that don’t have a submenu -->
-                                        <li>
+                                        <li class="editable">
                                             <a href="{{ site.baseurl }}/{{ menu.href }}">{{ menu.title }}</a>
-                                            {% endif %}
                                         </li>
                                 {% endfor %}
                             </ul>                

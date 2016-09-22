@@ -8,6 +8,8 @@ permalink: news-all
              <div class="content-full">
                  {% for post in site.categories.news %}
                      <div class="post">
+                      <!-- Editor Link -->
+                            <a href="cloudcannon:collections/{{ post.path }}" class="editor-link">Edit post</a>
                              <div class="post-img">
                                  <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{post.image}}&width=1280&height=420" alt="{{post.title}}">
                              </div>

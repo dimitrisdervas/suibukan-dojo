@@ -6,9 +6,11 @@ permalink: program
 
         <div id="map-canvas"></div>
         <div class="container-front">
-             <div class="content-full">                 
+             <div class="content-full">  
+
                  {% for program in site.dojo %}
                  <section class="schedule-section">
+                  <a href="cloudcannon:collections/{{ program.path }}" class="editor-link">Edit dojo</a>
                        <h1>{{ program.title }}</h1>
                         <h3>{{ program.address }}</h3>
                        <div>

@@ -8,6 +8,7 @@ permalink: videos
              <div class="content-full">            
              {% for video in site.data.videos %} 
                    <section id="{{ video.url }}" class="videos-page">
+                   <a href="cloudcannon:collections/_data/videos.yml" class="editor-link">Edit videos</a>
                           <div class="videos-left left">
                               <h2> {{ video.title }} </h2>   
                               <p>{{ video.duration }}</p>

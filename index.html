@@ -96,7 +96,7 @@ layout: default
                  <ul>
                    {% for post in site.categories['articles'] limit: 4 %} 
                          <li class="articles-list">
-                                 <div class="article caption editable">
+                                 <div class="article caption">
                                       <a href="cloudcannon:collections/{{ post.path }}" class="editor-link">Edit post</a>
                                       <div class="article-img caption__media">
                                              <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{post.image}}&width=320&height=320" alt="{{post.title}}">
