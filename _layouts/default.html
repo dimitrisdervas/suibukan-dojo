@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head-simon.html %}
+  {% include head.html %}
 
     <body>
 
-        {% include header-simon-include.html %}
+        {% include header.html %}
 
     <div class="page">
-        <div id="map-canvas"></div>
-        <div class="container-front">
-             <div class="content-full">                 
-                 {% for program in site.categories.dojo %}
-                 <section class="schedule-section">
-                       <h1>{{ program.title }}</h1>
-                        <h3>{{ program.address }}</h3>
-                       <div>
-                           {{ program.content }}
-                           </div>
-                     </section>
-                 {% endfor %}
-            </div>            
-        </div>
-    </div>
+    {{ content }}
+       </div>
+
+
 
     {% include footer-include.html %}
+        
+
+
 
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>        
 <script>
@@ -55,4 +47,3 @@
 
     </body>
 </html>
-

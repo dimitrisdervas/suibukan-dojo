@@ -1,3 +1,4 @@
+include: ['_pages']
 # Site settings
 title: SuiBuKan Thessaloniki
 email: dervas@suibukan.com
@@ -8,18 +9,35 @@ sass:
     sass_dir: _sass
 gems:
   - jekyll-sitemap
+
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
 
-defaults:
-  -
-    scope:
-       path: ""
-       type: "posts"
-    values:
-       layout: "posts-layout"
+collections:
+  dojo:
+    output: true
+    permalink: /dojo/:path/
+  martialarts:
+    output: true
+    permalink: /martialarts/:path/
 
+
+category:
+  - news
+  - articles
+
+defaults:
+  - type: 'posts'
+    values:
+      layout: posts-layout
+  - type: 'dojo'
+    values:
+      layout: posts-layout
+  - type: 'martialarts'
+    values:
+      layout: posts-layout
+      
 prose:
   rooturl: '_posts'
   siteurl: 'http:thes.suibukan.com'

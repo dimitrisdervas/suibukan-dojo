@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: program
+---
+
+
+        <div id="map-canvas"></div>
+        <div class="container-front">
+             <div class="content-full">                 
+                 {% for program in site.dojo %}
+                 <section class="schedule-section">
+                       <h1>{{ program.title }}</h1>
+                        <h3>{{ program.address }}</h3>
+                       <div>
+                           {{ program.content }}
+                           </div>
+                     </section>
+                 {% endfor %}
+            </div>            
+        </div>
+  
