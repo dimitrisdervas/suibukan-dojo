@@ -18,6 +18,13 @@ $border: #E9E9E9;
 $link-hover: #B40133;
 $icon-hover: #d4d4d4;
 
+.editor-link {
+  display: none;
+}
+
+.cms-editor-active .editor-link {
+  display: block;
+}
 
 body {
 background-color: $bg-body;
