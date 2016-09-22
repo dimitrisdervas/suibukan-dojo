@@ -26,7 +26,7 @@ layout: default
              <div class="container-front">
               <ul class="dojo-regions"> 
                      {% for dojo in site.dojo %}                            
-                                <li>
+                                <li class="editable">
                                     <h1><a href="{{ site.baseurl }}/program">{{ dojo.region | uppercase }}</a></h1>
                                 </li>                                                 
                         {% endfor %}
@@ -68,6 +68,7 @@ layout: default
          <section class="videos-section section-full">          
          <div class="container-front">
            <h5 class="section-title">Videos</h5>
+            <a href="cloudcannon:collections/_data/videos.yml" class="editor-link">Edit videos</a>
               <span class="line small red"></span> 
            {% for video in site.data.videos limit:1 %}                  
                      <h2> {{ video.title }} </h2>
@@ -95,7 +96,8 @@ layout: default
                  <ul>
                    {% for post in site.categories['articles'] limit: 4 %} 
                          <li class="articles-list">
-                                 <div class="article caption">
+                                 <div class="article caption editable">
+                                      <a href="cloudcannon:collections/{{ post.path }}" class="editor-link">Edit post</a>
                                       <div class="article-img caption__media">
                                              <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{post.image}}&width=320&height=320" alt="{{post.title}}">
                                          </div>
