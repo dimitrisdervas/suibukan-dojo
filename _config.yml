@@ -39,30 +39,23 @@ defaults:
       layout: posts-layout
       
 prose:
-  rooturl: '_posts'
+  rooturl: 
+    _posts
+    _martialarts
+    _dojo
+    _data
   siteurl: 'http:thes.suibukan.com'
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'assets/images'
   ignore:
-    - index.md
     - _config.yml
     - /_layouts
     - /_includes
-    - css
-    - js
-    - _data
+    - /assets/css
+    - /assets/js
     - _sass
-    - place
-    - program
-    - videos
-    - faq
-    - organization
   metadata:
     _posts/articles:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "posts-layout"
       - name: "title"
         field:
           element: "text"
@@ -72,25 +65,25 @@ prose:
           element: "text"
           label: "Permalink"
           value: ""
-    _posts/dojo:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
+    _dojo:
       - name: "title"
         field:
           element: "text"
           label: "title"
-      - name: "permalink"
+      - name: "address"
         field:
           element: "text"
-          label: "Permalink"
-          value: ""
+          label: "address"          
+      - name: "region"
+        field:
+          element: "text"
+          label: "region"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "published"
+          value: true
     _posts/news:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "posts-layout"
       - name: "title"
         field:
           element: "text"
@@ -103,3 +96,18 @@ prose:
           options:
             - name: "sticky at top of lists"
               value: "sticky"
+    _martialart:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Add Image to Post"
+          placeholder: "Image path (relative to /assets/images/)"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "published"
+          value: true
