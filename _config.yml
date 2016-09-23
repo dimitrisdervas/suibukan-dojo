@@ -40,10 +40,10 @@ defaults:
       
 prose:
   rooturl: 
-    _posts
-    _martialarts
-    _dojo
-    _data
+    - _posts
+    - _martialarts
+    - _dojo
+    - _data
   siteurl: 'http:thes.suibukan.com'
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'assets/images'
