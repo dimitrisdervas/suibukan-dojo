@@ -1,11 +1,12 @@
 <header class="site-header-wrapper">
         <div class="site-header">
-                <div class="logo editable">
+                <div class="logo">
                     <a href="{{ site.baseurl }}/"><span class="logo-title" > SUIBUKAN </span><span class="logo-subheader">at Thessaloniki</span></a>
                     </div>
                 <div class="menu-wrapper" >
                         <nav id="nav" role="navigation">
                             <ul>	
+                            <a href="cloudcannon:collections/_data/menu.yml" class="editor-link">Edit videos</a>
                                 {% for menu in site.data.menu %}                     
                                         <li class="editable">
                                             <a href="{{ site.baseurl }}/{{ menu.href }}">{{ menu.title }}</a>

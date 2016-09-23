@@ -5,6 +5,7 @@ layout: default
      <section class="slideshow-section section-full">
           <div class="slideshow">
             <ul class="slides">
+            <a href="cloudcannon:collections/_data/slideshow.yml" class="editor-link">Edit videos</a>
               {% for image in site.data.slideshow-images limit:1 %}
                 <li style="background: url( {{ image.path }}) no-repeat;background-size: cover;">
                     <div class="container-slideshow" >
