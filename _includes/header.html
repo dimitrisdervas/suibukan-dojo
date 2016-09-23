@@ -8,7 +8,7 @@
                             <ul>	
                             <a href="cloudcannon:collections/_data/menu.yml" class="editor-link">Edit videos</a>
                                 {% for menu in site.data.menu %}                     
-                                        <li class="editable">
+                                        <li>
                                             <a href="{{ site.baseurl }}/{{ menu.href }}">{{ menu.title }}</a>
                                         </li>
                                 {% endfor %}
